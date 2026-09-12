@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Decision Tree Visualizer with Scikit-Learn Datasets</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- D3.js for tree visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .node circle {
+            fill: #fff;
+            stroke: #3b82f6;
+            stroke-width: 3px;
+            transition: all 0.3s ease;
+        }
+        .node text {
+            font: 12px sans-serif;
+            font-weight: 600;
+        }
+        .link {
+            fill: none;
+            stroke: #cbd5e1;
+            stroke-width: 2px;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold">Decision Tree Hyperparameter Visualizer</h1>
+            <p class="text-sm opacity-90">Explore dynamic Scikit-Learn datasets and fine-tune hyperparameter controls.</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="flex flex-col md:flex-row h-[calc(100vh-73px)]">
+
+        <!-- Controls Sidebar -->
+        <aside class="w-full md:w-80 bg-white p-6 shadow-lg border-r border-gray-200 overflow-y-auto">
+            
+            <!-- Dataset Selector -->
+            <div class="mb-6 bg-blue-50 p-3 rounded-lg border border-blue-200">
+                <label class="font-bold text-blue-900 text-sm block mb-1">Select Dataset</label>
+                <select id="datasetSelect" class="w-full border border-blue-300 rounded-md p-2 text-sm bg-white font-medium text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="iris">Iris Dataset (3 Classes)</option>
+                    <option value="wine">Wine Dataset (3 Classes)</option>
+                    <option value="breast_cancer">Breast Cancer Dataset (2 Classes)</option>
+                    <option value="make_moons">make_moons (2 Classes)</option>
+                    <option value="make_circles">make_circles (2 Classes)</option>
+                    <option value="make_blobs">make_blobs (3 Classes)</option>
+                </select>
+            </div>
+
+            <h2 class="text-lg font-bold mb-4 text-gray-700 border-b pb-2">Hyperparameters</h2>
+
+            <div class="space-y-4">
+                <!-- Max Depth Slider -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Max Depth</label>
+                        <span id="maxDepthVal" class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">3</span>
+                    </div>
+                    <input type="range" id="maxDepth" min="1" max="6" value="3" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Min Samples Split -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Min Samples Split</label>
+                        <span id="minSplitVal" class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">10</span>
+                    </div>
+                    <input type="range" id="minSplit" min="2" max="40" value="10" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Min Samples Leaf -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Min Samples Leaf</label>
+                        <span id="minLeafVal" class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">5</span>
+                    </div>
+                    <input type="range" id="minLeaf" min="1" max="25" value="5" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Max Leaf Nodes -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Max Leaf Nodes</label>
+                        <span id="maxLeavesVal" class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">None</span>
+                    </div>
+                    <input type="range" id="maxLeaves" min="2" max="20" value="20" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Max Features -->
+                <div>
+                    <label class="font-semibold text-gray-700 text-sm block mb-1">Max Features</label>
+                    <select id="maxFeatures" class="w-full border border-gray-300 rounded-md p-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All Features</option>
+                        <option value="sqrt">sqrt(n_features)</option>
+                        <option value="log2">log2(n_features)</option>
+                        <option value="1">1 Feature</option>
+                    </select>
+                </div>
+
+                <!-- Min Impurity Decrease -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Min Impurity Threshold</label>
+                        <span id="minImpurityVal" class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">0.01</span>
+                    </div>
+                    <input type="range" id="minImpurity" min="0" max="0.3" step="0.01" value="0.01" class="w-full accent-blue-600 cursor-pointer">
+                </div>
+
+                <!-- Criterion -->
+                <div>
+                    <label class="font-semibold text-gray-700 text-sm block mb-1">Criterion</label>
+                    <select id="criterion" class="w-full border border-gray-300 rounded-md p-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="gini">Gini Impurity</option>
+                        <option value="entropy">Entropy</option>
+                    </select>
+                </div>
+
+                <!-- Stats summary -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 mt-4">
+                    <h3 class="font-bold text-gray-700 text-sm mb-2">Tree Statistics</h3>
+                    <div class="text-xs space-y-1">
+                        <div class="flex justify-between"><span>Total Nodes:</span> <span id="statNodes" class="font-semibold">0</span></div>
+                        <div class="flex justify-between"><span>Leaf Nodes:</span> <span id="statLeaves" class="font-semibold">0</span></div>
+                        <div class="flex justify-between"><span>Actual Depth:</span> <span id="statDepth" class="font-semibold">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Visualization Canvas Area -->
+        <main class="flex-1 bg-gray-50 p-4 flex flex-col items-center justify-center relative overflow-hidden">
+            <div id="tree-container" class="w-full h-full bg-white rounded-lg shadow-inner border border-gray-200 flex items-center justify-center">
+                <!-- D3 Tree SVG dynamically appended here -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // --- 1. Scikit-Learn Built-in Datasets Generators & Embeds ---
+        const datasets = {
+            iris: () => {
+                const features = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width'];
+                const raw = [
+                    [5.1,3.5,1.4,0.2,0],[4.9,3.0,1.4,0.2,0],[4.7,3.2,1.3,0.2,0],[4.6,3.1,1.5,0.2,0],[5.0,3.6,1.4,0.2,0],
+                    [7.0,3.2,4.7,1.4,1],[6.4,3.2,4.5,1.5,1],[6.9,3.1,4.9,1.5,1],[5.5,2.3,4.0,1.3,1],[6.5,2.8,4.6,1.5,1],
+                    [6.3,3.3,6.0,2.5,2],[5.8,2.7,5.1,1.9,2],[7.1,3.0,5.9,2.1,2],[6.3,2.9,5.6,1.8,2],[6.5,3.0,5.8,2.2,2]
+                ];
+                // Synthesize rest of dataset for interactive volume
+                for (let i = 0; i < 135; i++) {
+                    const cls = i % 3;
+                    const shift = cls === 0 ? 0 : cls === 1 ? 1.5 : 2.5;
+                    raw.push([
+                        5.0 + shift + (Math.random()-0.5),
+                        3.0 + (Math.random()-0.5),
+                        1.5 + shift * 1.8 + (Math.random()-0.5),
+                        0.2 + shift * 0.8 + (Math.random()-0.3),
+                        cls
+                    ]);
+                }
+                return { features, data: raw.map(row => ({ sepal_length: row[0], sepal_width: row[1], petal_length: row[2], petal_width: row[3], target: row[4] })) };
+            },
+            wine: () => {
+                const features = ['alcohol', 'malic_acid', 'ash', 'flavanoids'];
+                const data = [];
+                for(let i=0; i<150; i++) {
+                    const target = i % 3;
+                    data.push({
+                        alcohol: 11 + target * 1.2 + Math.random()*1.5,
+                        malic_acid: 1 + target * 0.8 + Math.random()*1.2,
+                        ash: 2.2 + Math.random()*0.6,
+                        flavanoids: 0.5 + target * 1.1 + Math.random()*0.8,
+                        target
+                    });
+                }
+                return { features, data };
+            },
+            breast_cancer: () => {
+                const features = ['mean_radius', 'mean_texture', 'mean_perimeter', 'mean_area'];
+                const data = [];
+                for(let i=0; i<160; i++) {
+                    const target = Math.random() > 0.4 ? 1 : 0;
+                    data.push({
+                        mean_radius: target === 0 ? 17 + Math.random()*5 : 12 + Math.random()*4,
+                        mean_texture: 15 + Math.random()*10,
+                        mean_perimeter: target === 0 ? 115 + Math.random()*30 : 75 + Math.random()*25,
+                        mean_area: target === 0 ? 950 + Math.random()*400 : 450 + Math.random()*300,
+                        target
+                    });
+                }
+                return { features, data };
+            },
+            make_moons: () => {
+                const features = ['feature_x', 'feature_y'];
+                const data = [];
+                for(let i=0; i<150; i++) {
+                    const target = i % 2;
+                    const angle = Math.random() * Math.PI;
+                    if (target === 0) {
+                        data.push({ feature_x: Math.cos(angle)*10 + (Math.random()-0.5), feature_y: Math.sin(angle)*10 + (Math.random()-0.5), target });
+                    } else {
+                        data.push({ feature_x: 5 + Math.cos(angle)*10 + (Math.random()-0.5), feature_y: -Math.sin(angle)*10 + 2 + (Math.random()-0.5), target });
+                    }
+                }
+                return { features, data };
+            },
+            make_circles: () => {
+                const features = ['feature_x', 'feature_y'];
+                const data = [];
+                for(let i=0; i<160; i++) {
+                    const target = i % 2;
+                    const r = target === 0 ? 5 + Math.random() : 12 + Math.random()*2;
+                    const angle = Math.random() * 2 * Math.PI;
+                    data.push({ feature_x: r * Math.cos(angle), feature_y: r * Math.sin(angle), target });
+                }
+                return { features, data };
+            },
+            make_blobs: () => {
+                const features = ['feature_x', 'feature_y'];
+                const data = [];
+                const centers = [[-5, -5], [5, 5], [-5, 5]];
+                for(let i=0; i<150; i++) {
+                    const target = i % 3;
+                    data.push({
+                        feature_x: centers[target][0] + (Math.random()-0.5)*4,
+                        feature_y: centers[target][1] + (Math.random()-0.5)*4,
+                        target
+                    });
+                }
+                return { features, data };
+            }
+        };
+
+        // Class Palette for Dynamic Color Assignment up to 3 classes
+        const classColors = ["#3b82f6", "#ec4899", "#10b981"]; // Blue, Pink, Green
+
+        // --- 2. Impurity Calculations (Multi-Class Multi-Entropy/Gini) ---
+        function calculateImpurity(data, criterion) {
+            if (data.length === 0) return 0;
+            const counts = {};
+            data.forEach(d => counts[d.target] = (counts[d.target] || 0) + 1);
+            
+            let impurity = criterion === 'gini' ? 1 : 0;
+            const total = data.length;
+
+            Object.values(counts).forEach(count => {
+                const p = count / total;
+                if (criterion === 'gini') {
+                    impurity -= p * p;
+                } else { // Entropy
+                    if (p > 0) impurity -= p * Math.log2(p);
+                }
+            });
+
+            return impurity;
+        }
+
+        // Feature Selector helper
+        function selectFeatures(availableFeatures, maxFeaturesOption) {
+            const total = availableFeatures.length;
+            let count = total;
+
+            if (maxFeaturesOption === 'sqrt') {
+                count = Math.max(1, Math.floor(Math.sqrt(total)));
+            } else if (maxFeaturesOption === 'log2') {
+                count = Math.max(1, Math.floor(Math.log2(total)));
+            } else if (maxFeaturesOption === '1') {
+                count = 1;
+            }
+
+            const shuffled = [...availableFeatures].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        // --- 3. Decision Tree Algorithm ---
+        function buildTree(data, features, params) {
+            let leafCount = 1;
+
+            function createNode(nodeData, depth) {
+                const numSamples = nodeData.length;
+
+                // Majority Voting for predicted class
+                const classCounts = {};
+                nodeData.forEach(d => classCounts[d.target] = (classCounts[d.target] || 0) + 1);
+                let predictedClass = 0;
+                let maxCount = -1;
+                Object.entries(classCounts).forEach(([cls, count]) => {
+                    if (count > maxCount) {
+                        maxCount = count;
+                        predictedClass = parseInt(cls);
+                    }
+                });
+
+                const currentImpurity = calculateImpurity(nodeData, params.criterion);
+
+                const node = {
+                    name: depth === 0 ? "Root" : "",
+                    samples: numSamples,
+                    impurity: currentImpurity.toFixed(2),
+                    predictedClass: predictedClass,
+                    children: []
+                };
+
+                // Base stopping condition checks
+                if (
+                    depth >= params.maxDepth || 
+                    numSamples < params.minSplit || 
+                    currentImpurity === 0 ||
+                    (params.maxLeaves && leafCount >= params.maxLeaves)
+                ) {
+                    return node;
+                }
+
+                // Random feature selection (max_features)
+                const candidateFeatures = selectFeatures(features, params.maxFeatures);
+
+                let bestGain = 0;
+                let bestSplit = null;
+
+                candidateFeatures.forEach(feature => {
+                    const sorted = [...nodeData].sort((a, b) => a[feature] - b[feature]);
+                    for (let i = 0; i < sorted.length - 1; i++) {
+                        const threshold = (sorted[i][feature] + sorted[i+1][feature]) / 2;
+                        const left = sorted.filter(d => d[feature] <= threshold);
+                        const right = sorted.filter(d => d[feature] > threshold);
+
+                        // min_samples_leaf check
+                        if (left.length < params.minLeaf || right.length < params.minLeaf) continue;
+
+                        const leftImpurity = calculateImpurity(left, params.criterion);
+                        const rightImpurity = calculateImpurity(right, params.criterion);
+                        
+                        const gain = currentImpurity - 
+                            ((left.length / numSamples) * leftImpurity + (right.length / numSamples) * rightImpurity);
+
+                        if (gain > bestGain) {
+                            bestGain = gain;
+                            bestSplit = { feature, threshold, left, right };
+                        }
+                    }
+                });
+
+                if (bestSplit && bestGain >= params.minImpurity) {
+                    if (!params.maxLeaves || (leafCount + 1 <= params.maxLeaves)) {
+                        leafCount += 1;
+                        node.name = `${bestSplit.feature} <= ${bestSplit.threshold.toFixed(1)}`;
+                        node.children.push(createNode(bestSplit.left, depth + 1));
+                        node.children.push(createNode(bestSplit.right, depth + 1));
+                    }
+                }
+
+                return node;
+            }
+
+            return createNode(data, 0);
+        }
+
+        // --- 4. D3 Visualization ---
+        function renderD3Tree(treeData) {
+            const container = document.getElementById('tree-container');
+            container.innerHTML = '';
+
+            const width = container.clientWidth || 800;
+            const height = container.clientHeight || 600;
+
+            const svg = d3.select("#tree-container")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(0, 45)");
+
+            const treeLayout = d3.tree().size([width - 120, height - 130]);
+            const root = d3.hierarchy(treeData);
+
+            treeLayout(root);
+
+            // Path links
+            svg.selectAll(".link")
+                .data(root.links())
+                .enter()
+                .append("path")
+                .attr("class", "link")
+                .attr("d", d3.linkVertical()
+                    .x(d => d.x + 60)
+                    .y(d => d.y)
+                );
+
+            // Nodes
+            const node = svg.selectAll(".node")
+                .data(root.descendants())
+                .enter()
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x + 60},${d.y})`);
+
+            // Circles colored by Predicted Class
+            node.append("circle")
+                .attr("r", 20)
+                .style("fill", d => classColors[d.data.predictedClass] || "#3b82f6")
+                .style("stroke", "#fff");
+
+            // Split labels
+            node.append("text")
+                .attr("dy", "-28")
+                .attr("text-anchor", "middle")
+                .text(d => d.data.children && d.data.children.length > 0 ? d.data.name : "Leaf")
+                .style("fill", "#1e293b");
+
+            // Sample size text inside circle
+            node.append("text")
+                .attr("dy", "4")
+                .attr("text-anchor", "middle")
+                .style("fill", "#ffffff")
+                .style("font-size", "10px")
+                .text(d => `n=${d.data.samples}`);
+
+            // Impurity text below circle
+            node.append("text")
+                .attr("dy", "32")
+                .attr("text-anchor", "middle")
+                .style("fill", "#64748b")
+                .style("font-size", "10px")
+                .text(d => `Imp: ${d.data.impurity}`);
+        }
+
+        // --- 5. Controller & Dynamic Renderer ---
+        function updateTree() {
+            // Fetch Dataset Selection
+            const selectedDatasetKey = document.getElementById('datasetSelect').value;
+            const datasetObj = datasets[selectedDatasetKey]();
+
+            // Fetch Hyperparameter Values
+            const maxDepth = parseInt(document.getElementById('maxDepth').value);
+            const minSplit = parseInt(document.getElementById('minSplit').value);
+            const minLeaf = parseInt(document.getElementById('minLeaf').value);
+            const maxLeavesRaw = parseInt(document.getElementById('maxLeaves').value);
+            const maxLeaves = maxLeavesRaw >= 20 ? null : maxLeavesRaw;
+            const maxFeatures = document.getElementById('maxFeatures').value;
+            const minImpurity = parseFloat(document.getElementById('minImpurity').value);
+            const criterion = document.getElementById('criterion').value;
+
+            // Display Values on UI
+            document.getElementById('maxDepthVal').innerText = maxDepth;
+            document.getElementById('minSplitVal').innerText = minSplit;
+            document.getElementById('minLeafVal').innerText = minLeaf;
+            document.getElementById('maxLeavesVal').innerText = maxLeaves === null ? "None" : maxLeaves;
+            document.getElementById('minImpurityVal').innerText = minImpurity;
+
+            // Generate Decision Tree
+            const params = { maxDepth, minSplit, minLeaf, maxLeaves, maxFeatures, minImpurity, criterion };
+            const treeData = buildTree(datasetObj.data, datasetObj.features, params);
+
+            // Render Visualization
+            renderD3Tree(treeData);
+
+            // Update Statistics
+            const root = d3.hierarchy(treeData);
+            document.getElementById('statNodes').innerText = root.descendants().length;
+            document.getElementById('statLeaves').innerText = root.leaves().length;
+            document.getElementById('statDepth').innerText = root.height;
+        }
+
+        // Attach listeners to controls
+        ['maxDepth', 'minSplit', 'minLeaf', 'maxLeaves', 'minImpurity'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateTree);
+        });
+
+        ['datasetSelect', 'maxFeatures', 'criterion'].forEach(id => {
+            document.getElementById(id).addEventListener('change', updateTree);
+        });
+
+        window.addEventListener('resize', updateTree);
+
+        // Initial launch
+        updateTree();
+    </script>
+</body>
+</html>
