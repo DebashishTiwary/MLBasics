@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gradient Descent & Linear Regression Visualizer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white p-4 shadow-md flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold">Gradient Descent Visualizer</h1>
+            <p class="text-sm opacity-90">Watch how Gradient Descent optimizes slope (m) and intercept (b) live on the loss surface.</p>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex flex-col lg:flex-row h-[calc(100vh-73px)]">
+
+        <!-- Controls Sidebar -->
+        <aside class="w-full lg:w-80 bg-white p-6 shadow-lg border-r border-gray-200 overflow-y-auto flex-shrink-0">
+            <h2 class="text-lg font-bold mb-4 text-gray-700 border-b pb-2">Gradient Descent Controls</h2>
+
+            <div class="space-y-4">
+                <!-- Learning Rate Controls -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Learning Rate (&alpha;)</label>
+                        <span id="lrVal" class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">0.0003</span>
+                    </div>
+                    <select id="learningRateSelect" class="w-full border border-gray-300 rounded-md p-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="0.00005">0.00005 (Very Slow)</option>
+                        <option value="0.0001">0.0001 (Slow)</option>
+                        <option value="0.0003" selected>0.0003 (Balanced)</option>
+                        <option value="0.0008">0.0008 (Fast)</option>
+                        <option value="0.002">0.002 (Overshooting risk)</option>
+                    </select>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-2 pt-2">
+                    <div class="flex gap-2">
+                        <button id="btnPlay" class="w-1/2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition">
+                            ▶ Run GD
+                        </button>
+                        <button id="btnStep" class="w-1/2 bg-indigo-50 border border-indigo-300 text-indigo-700 hover:bg-indigo-100 font-bold py-2 px-3 rounded text-xs transition">
+                            Step ⏭
+                        </button>
+                    </div>
+                    <button id="btnResetParams" class="w-full bg-gray-100 border border-gray-300 text-gray-700 hover:bg-gray-200 font-semibold py-1.5 px-3 rounded text-xs transition">
+                        Reset Params to Random Start
+                    </button>
+                </div>
+
+                <hr class="my-3 border-gray-200">
+
+                <!-- Dataset Controls -->
+                <div class="space-y-2">
+                    <label class="font-semibold text-gray-700 text-sm block">Data Controls</label>
+                    <div class="flex gap-2">
+                        <button id="btnGenerate" class="w-1/2 bg-gray-50 border border-gray-300 hover:bg-gray-100 text-gray-700 font-semibold py-1.5 px-2 rounded text-xs transition">
+                            New Points
+                        </button>
+                        <button id="btnClear" class="w-1/2 bg-red-50 border border-red-200 hover:bg-red-100 text-red-700 font-semibold py-1.5 px-2 rounded text-xs transition">
+                            Clear Points
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Manual Sliders -->
+                <div class="pt-2 space-y-3">
+                    <h3 class="font-semibold text-gray-700 text-xs uppercase tracking-wider">Manual Adjustment</h3>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="font-semibold text-gray-700 text-sm">Slope (m)</label>
+                            <span id="slopeVal" class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">-2.00</span>
+                        </div>
+                        <input type="range" id="slope" min="-5" max="5" step="0.01" value="-2.0" class="w-full accent-indigo-600 cursor-pointer">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="font-semibold text-gray-700 text-sm">Intercept (b)</label>
+                            <span id="interceptVal" class="bg-indigo-100 text-indigo-800 text-xs font-bold px-2 py-1 rounded">50.00</span>
+                        </div>
+                        <input type="range" id="intercept" min="-20" max="80" step="0.1" value="50" class="w-full accent-indigo-600 cursor-pointer">
+                    </div>
+                </div>
+
+                <!-- Real-time Stats -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 mt-4 space-y-2">
+                    <h3 class="font-bold text-gray-700 text-sm border-b pb-1">Optimization Stats</h3>
+                    <div class="text-xs space-y-1 font-mono">
+                        <div class="flex justify-between"><span>Iteration Step:</span> <span id="statIter" class="font-bold text-indigo-600">0</span></div>
+                        <div class="flex justify-between"><span>Equation:</span> <span id="statEq" class="font-bold">y = -2.00x + 50.00</span></div>
+                        <div class="flex justify-between"><span>MSE Loss:</span> <span id="statMSE" class="font-bold text-red-500">0.00</span></div>
+                        <div class="flex justify-between"><span>&part;Loss / &part;m:</span> <span id="statGradM" class="font-semibold">0.00</span></div>
+                        <div class="flex justify-between"><span>&part;Loss / &part;b:</span> <span id="statGradB" class="font-semibold">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Visualization Canvas Area -->
+        <main class="flex-1 bg-gray-50 p-4 flex flex-col gap-4 overflow-y-auto">
+            
+            <!-- Top Chart: Scatter & Regression Line Fit -->
+            <div class="h-1/2 min-h-[300px] bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative flex flex-col">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-sm text-gray-700">1. Data Space (Click to add custom points)</h3>
+                    <span class="text-xs text-gray-400">Fits: y = mx + b</span>
+                </div>
+                <div class="flex-1 relative">
+                    <canvas id="regressionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Bottom Chart: Gradient Descent Loss Surface / Path Visualization -->
+            <div class="h-1/2 min-h-[300px] bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative flex flex-col">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-sm text-gray-700">2. Loss Surface Trajectory (Cost Space: Slope vs. Loss)</h3>
+                    <span class="text-xs text-gray-400">Shows current position & historical steps taken by Gradient Descent</span>
+                </div>
+                <div class="flex-1 relative">
+                    <canvas id="lossChart"></canvas>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // State variables
+        let dataPoints = [];
+        let currentSlope = -2.0;
+        let currentIntercept = 50.0;
+        let isRunning = false;
+        let animationFrameId = null;
+        let iterCount = 0;
+        let gdPathHistory = []; // Stores trajectory of (slope, MSE) pairs
+
+        // Synthetic Data Generation
+        function generateRandomData(count = 35) {
+            dataPoints = [];
+            const trueSlope = 0.8;
+            const trueIntercept = 15;
+            for (let i = 0; i < count; i++) {
+                const x = Math.random() * 80 + 10;
+                const noise = (Math.random() - 0.5) * 20;
+                const y = Math.max(0, Math.min(100, trueSlope * x + trueIntercept + noise));
+                dataPoints.push({ x, y });
+            }
+            iterCount = 0;
+            gdPathHistory = [];
+        }
+        generateRandomData();
+
+        // 1. Data Chart Setup
+        const ctxData = document.getElementById('regressionChart').getContext('2d');
+        const regressionChart = new Chart(ctxData, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'Data Points',
+                        data: dataPoints,
+                        backgroundColor: '#ec4899',
+                        pointRadius: 5
+                    },
+                    {
+                        label: 'Current Regression Line',
+                        data: [],
+                        type: 'line',
+                        borderColor: '#4f46e5',
+                        borderWidth: 3,
+                        fill: false,
+                        pointRadius: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                scales: {
+                    x: { type: 'linear', min: 0, max: 100, title: { display: true, text: 'Feature X' } },
+                    y: { min: 0, max: 100, title: { display: true, text: 'Target Y' } }
+                }
+            }
+        });
+
+        // 2. Loss Surface Chart Setup
+        const ctxLoss = document.getElementById('lossChart').getContext('2d');
+        const lossChart = new Chart(ctxLoss, {
+            type: 'line',
+            data: {
+                datasets: [
+                    {
+                        label: 'MSE Loss Curve (at current b)',
+                        data: [],
+                        borderColor: '#cbd5e1',
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        fill: false
+                    },
+                    {
+                        label: 'GD Steps Path',
+                        data: [],
+                        borderColor: '#f59e0b',
+                        borderWidth: 2,
+                        backgroundColor: '#f59e0b',
+                        pointRadius: 3,
+                        showLine: true
+                    },
+                    {
+                        label: 'Current Position',
+                        data: [],
+                        backgroundColor: '#ef4444',
+                        borderColor: '#ffffff',
+                        borderWidth: 2,
+                        pointRadius: 8
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                scales: {
+                    x: { type: 'linear', title: { display: true, text: 'Slope (m)' }, min: -5, max: 5 },
+                    y: { type: 'linear', title: { display: true, text: 'MSE Loss' }, min: 0 }
+                }
+            }
+        });
+
+        // Compute Loss for given m and b
+        function computeMSE(m, b) {
+            if (dataPoints.length === 0) return 0;
+            let sumSqErr = 0;
+            dataPoints.forEach(p => {
+                const pred = m * p.x + b;
+                sumSqErr += (p.y - pred) ** 2;
+            });
+            return sumSqErr / dataPoints.length;
+        }
+
+        // Compute Gradient Step
+        function stepGradientDescent() {
+            const n = dataPoints.length;
+            if (n === 0) return { gradM: 0, gradB: 0 };
+
+            const alpha = parseFloat(document.getElementById('learningRateSelect').value);
+            let gradM = 0;
+            let gradB = 0;
+
+            // Partial derivative calculation
+            dataPoints.forEach(p => {
+                const err = (currentSlope * p.x + currentIntercept) - p.y;
+                gradM += (2 / n) * err * p.x;
+                gradB += (2 / n) * err;
+            });
+
+            // Update weights
+            currentSlope -= alpha * gradM;
+            currentIntercept -= alpha * gradB;
+
+            // Constrain sliders UI
+            currentSlope = Math.max(-5, Math.min(5, currentSlope));
+            currentIntercept = Math.max(-20, Math.min(80, currentIntercept));
+
+            document.getElementById('slope').value = currentSlope;
+            document.getElementById('intercept').value = currentIntercept;
+
+            iterCount++;
+            return { gradM, gradB };
+        }
+
+        // Generate Loss Curve Points for current Intercept
+        function getLossCurveData() {
+            const curve = [];
+            for (let m = -5; m <= 5; m += 0.2) {
+                curve.push({ x: m, y: computeMSE(m, currentIntercept) });
+            }
+            return curve;
+        }
+
+        // Render Refresh
+        function updateVisualization(gradM = 0, gradB = 0) {
+            currentSlope = parseFloat(document.getElementById('slope').value);
+            currentIntercept = parseFloat(document.getElementById('intercept').value);
+
+            // Update Labels
+            document.getElementById('slopeVal').innerText = currentSlope.toFixed(2);
+            document.getElementById('interceptVal').innerText = currentIntercept.toFixed(2);
+            document.getElementById('lrVal').innerText = document.getElementById('learningRateSelect').value;
+
+            // Regression line
+            regressionChart.data.datasets[0].data = dataPoints;
+            regressionChart.data.datasets[1].data = [
+                { x: 0, y: currentSlope * 0 + currentIntercept },
+                { x: 100, y: currentSlope * 100 + currentIntercept }
+            ];
+            regressionChart.update();
+
+            // Calculate current MSE
+            const mse = computeMSE(currentSlope, currentIntercept);
+
+            // Path Trajectory Tracking
+            gdPathHistory.push({ x: currentSlope, y: mse });
+            if (gdPathHistory.length > 50) gdPathHistory.shift(); // keep last 50 steps
+
+            // Loss Surface updates
+            lossChart.data.datasets[0].data = getLossCurveData();
+            lossChart.data.datasets[1].data = [...gdPathHistory];
+            lossChart.data.datasets[2].data = [{ x: currentSlope, y: mse }];
+            lossChart.update();
+
+            // Stats box
+            const sign = currentIntercept >= 0 ? '+' : '-';
+            document.getElementById('statEq').innerText = `y = ${currentSlope.toFixed(2)}x ${sign} ${Math.abs(currentIntercept).toFixed(2)}`;
+            document.getElementById('statMSE').innerText = mse.toFixed(2);
+            document.getElementById('statIter').innerText = iterCount;
+            document.getElementById('statGradM').innerText = gradM.toFixed(3);
+            document.getElementById('statGradB').innerText = gradB.toFixed(3);
+        }
+
+        // Continuous Loop Runner
+        function runLoop() {
+            if (!isRunning) return;
+            const { gradM, gradB } = stepGradientDescent();
+            updateVisualization(gradM, gradB);
+
+            // Stop condition if gradient is near zero
+            if (Math.abs(gradM) < 0.001 && Math.abs(gradB) < 0.001) {
+                toggleRun(false);
+            } else {
+                animationFrameId = requestAnimationFrame(runLoop);
+            }
+        }
+
+        function toggleRun(state) {
+            isRunning = state !== undefined ? state : !isRunning;
+            const btn = document.getElementById('btnPlay');
+            if (isRunning) {
+                btn.innerText = "⏸ Pause GD";
+                btn.className = "w-1/2 bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition";
+                runLoop();
+            } else {
+                btn.innerText = "▶ Run GD";
+                btn.className = "w-1/2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition";
+                if (animationFrameId) cancelAnimationFrame(animationFrameId);
+            }
+        }
+
+        // Event Listeners
+        document.getElementById('btnPlay').addEventListener('click', () => toggleRun());
+        document.getElementById('btnStep').addEventListener('click', () => {
+            toggleRun(false);
+            const { gradM, gradB } = stepGradientDescent();
+            updateVisualization(gradM, gradB);
+        });
+
+        document.getElementById('btnResetParams').addEventListener('click', () => {
+            toggleRun(false);
+            currentSlope = (Math.random() - 0.5) * 8;
+            currentIntercept = Math.random() * 60;
+            document.getElementById('slope').value = currentSlope;
+            document.getElementById('intercept').value = currentIntercept;
+            iterCount = 0;
+            gdPathHistory = [];
+            updateVisualization();
+        });
+
+        document.getElementById('btnGenerate').addEventListener('click', () => {
+            toggleRun(false);
+            generateRandomData();
+            updateVisualization();
+        });
+
+        document.getElementById('btnClear').addEventListener('click', () => {
+            toggleRun(false);
+            dataPoints = [];
+            gdPathHistory = [];
+            iterCount = 0;
+            updateVisualization();
+        });
+
+        document.getElementById('slope').addEventListener('input', () => { toggleRun(false); updateVisualization(); });
+        document.getElementById('intercept').addEventListener('input', () => { toggleRun(false); updateVisualization(); });
+        document.getElementById('learningRateSelect').addEventListener('change', () => updateVisualization());
+
+        // Add Custom Click Point
+        document.getElementById('regressionChart').addEventListener('click', (evt) => {
+            const canvasPosition = Chart.helpers.getRelativePosition(evt, regressionChart);
+            const dataX = regressionChart.scales.x.getValueForPixel(canvasPosition.x);
+            const dataY = regressionChart.scales.y.getValueForPixel(canvasPosition.y);
+
+            if (dataX >= 0 && dataX <= 100 && dataY >= 0 && dataY <= 100) {
+                dataPoints.push({ x: dataX, y: dataY });
+                gdPathHistory = [];
+                updateVisualization();
+            }
+        });
+
+        // Initial launch
+        updateVisualization();
+    </script>
+</body>
+</html>
