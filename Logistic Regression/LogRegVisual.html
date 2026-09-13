@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalized Logistic Regression Visualizer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-teal-700 text-white p-4 shadow-md flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold">Logistic Regression with Feature Normalization</h1>
+            <p class="text-sm opacity-90">Feature scaling prevents sigmoid saturation, allowing Gradient Descent to achieve high accuracy.</p>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex flex-col lg:flex-row h-[calc(100vh-73px)]">
+
+        <!-- Controls Sidebar -->
+        <aside class="w-full lg:w-80 bg-white p-6 shadow-lg border-r border-gray-200 overflow-y-auto flex-shrink-0">
+            <h2 class="text-lg font-bold mb-4 text-gray-700 border-b pb-2">Controls & Hyperparameters</h2>
+
+            <div class="space-y-4">
+                <!-- Learning Rate Select -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="font-semibold text-gray-700 text-sm">Learning Rate (&alpha;)</label>
+                        <span id="lrVal" class="bg-teal-100 text-teal-800 text-xs font-bold px-2 py-1 rounded">0.1</span>
+                    </div>
+                    <select id="learningRateSelect" class="w-full border border-gray-300 rounded-md p-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        <option value="0.01">0.01 (Slow)</option>
+                        <option value="0.05">0.05 (Moderate)</option>
+                        <option value="0.1" selected>0.1 (Optimal)</option>
+                        <option value="0.3">0.3 (Fast)</option>
+                    </select>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-2 pt-1">
+                    <div class="flex gap-2">
+                        <button id="btnPlay" class="w-1/2 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition">
+                            ▶ Run GD
+                        </button>
+                        <button id="btnStep" class="w-1/2 bg-teal-50 border border-teal-300 text-teal-700 hover:bg-teal-100 font-bold py-2 px-3 rounded text-xs transition">
+                            Step ⏭
+                        </button>
+                    </div>
+                    <button id="btnResetParams" class="w-full bg-gray-100 border border-gray-300 text-gray-700 hover:bg-gray-200 font-semibold py-1.5 px-3 rounded text-xs transition">
+                        Reset Weights (w1=0, w2=0, b=0)
+                    </button>
+                </div>
+
+                <hr class="my-3 border-gray-200">
+
+                <!-- Class Selection for Adding Points -->
+                <div>
+                    <label class="font-semibold text-gray-700 text-sm block mb-1">Click Canvas to Add Data</label>
+                    <div class="flex gap-2">
+                        <button id="btnClass0" class="w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-2 rounded text-xs ring-2 ring-blue-800 transition">
+                            Class 0 (Blue)
+                        </button>
+                        <button id="btnClass1" class="w-1/2 bg-pink-600 hover:bg-pink-700 text-white font-bold py-1.5 px-2 rounded text-xs opacity-60 transition">
+                            Class 1 (Pink)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Dataset Control Buttons -->
+                <div class="flex gap-2 pt-1">
+                    <button id="btnGenerate" class="w-1/2 bg-gray-50 border border-gray-300 hover:bg-gray-100 text-gray-700 font-semibold py-1.5 px-2 rounded text-xs transition">
+                        New Data
+                    </button>
+                    <button id="btnClear" class="w-1/2 bg-red-50 border border-red-200 hover:bg-red-100 text-red-700 font-semibold py-1.5 px-2 rounded text-xs transition">
+                        Clear Points
+                    </button>
+                </div>
+
+                <!-- Manual Weight Sliders -->
+                <div class="pt-2 space-y-3">
+                    <h3 class="font-semibold text-gray-700 text-xs uppercase tracking-wider">Normalized Weights</h3>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="font-semibold text-gray-700 text-xs">Weight w1</label>
+                            <span id="w1Val" class="bg-teal-100 text-teal-800 text-xs font-bold px-2 py-0.5 rounded">0.00</span>
+                        </div>
+                        <input type="range" id="weightW1" min="-5" max="5" step="0.1" value="0.0" class="w-full accent-teal-600 cursor-pointer">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="font-semibold text-gray-700 text-xs">Weight w2</label>
+                            <span id="w2Val" class="bg-teal-100 text-teal-800 text-xs font-bold px-2 py-0.5 rounded">0.00</span>
+                        </div>
+                        <input type="range" id="weightW2" min="-5" max="5" step="0.1" value="0.0" class="w-full accent-teal-600 cursor-pointer">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="font-semibold text-gray-700 text-xs">Bias (b)</label>
+                            <span id="biasVal" class="bg-teal-100 text-teal-800 text-xs font-bold px-2 py-0.5 rounded">0.00</span>
+                        </div>
+                        <input type="range" id="bias" min="-5" max="5" step="0.1" value="0.0" class="w-full accent-teal-600 cursor-pointer">
+                    </div>
+                </div>
+
+                <!-- Real-Time Metrics Dashboard -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 mt-4 space-y-2">
+                    <h3 class="font-bold text-gray-700 text-sm border-b pb-1">Model Performance</h3>
+                    <div class="text-xs space-y-1 font-mono">
+                        <div class="flex justify-between"><span>Iteration:</span> <span id="statIter" class="font-bold text-teal-700">0</span></div>
+                        <div class="flex justify-between"><span>Log Loss:</span> <span id="statLoss" class="font-bold text-red-500">0.00</span></div>
+                        <div class="flex justify-between"><span>Accuracy:</span> <span id="statAcc" class="font-bold text-green-600">0%</span></div>
+                        <div class="flex justify-between"><span>&part;L / &part;w1:</span> <span id="statGradW1" class="font-semibold">0.00</span></div>
+                        <div class="flex justify-between"><span>&part;L / &part;w2:</span> <span id="statGradW2" class="font-semibold">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Visualization Canvas Area -->
+        <main class="flex-1 bg-gray-50 p-4 flex flex-col gap-4 overflow-y-auto">
+            
+            <!-- Top Chart: 2D Feature Space + Heatmap Background -->
+            <div class="h-1/2 min-h-[300px] bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative flex flex-col">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-sm text-gray-700">1. Feature Space & Probability Heatmap</h3>
+                    <span class="text-xs text-gray-500 font-semibold">Blue: P(Class 1) &approx; 0 | Black Line: Decision Boundary (P = 0.5) | Pink: P(Class 1) &approx; 1</span>
+                </div>
+                <div class="flex-1 relative">
+                    <canvas id="decisionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Bottom Chart: Log Loss Curve Trajectory -->
+            <div class="h-1/2 min-h-[300px] bg-white rounded-lg shadow-sm border border-gray-200 p-4 relative flex flex-col">
+                <div class="flex justify-between items-center mb-2">
+                    <h3 class="font-bold text-sm text-gray-700">2. Log Loss Optimization Trajectory</h3>
+                    <span class="text-xs text-gray-400">Binary Cross-Entropy Loss over Gradient Steps</span>
+                </div>
+                <div class="flex-1 relative">
+                    <canvas id="lossChart"></canvas>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // Data & Model State
+        let dataPoints = [];
+        let activeAddClass = 0; // 0 for Blue, 1 for Pink
+        let w1 = 0.0, w2 = 0.0, bias = 0.0;
+        let isRunning = false;
+        let animationFrameId = null;
+        let iterCount = 0;
+        let lossHistory = [];
+
+        // Sigmoid Function with numeric overflow safeguards
+        function sigmoid(z) {
+            return 1 / (1 + Math.exp(-Math.max(-30, Math.min(30, z))));
+        }
+
+        // Compute Mean and Standard Deviation for Feature Scaling
+        function getNormalizationStats() {
+            const n = dataPoints.length;
+            if (n === 0) return { meanX1: 0, meanX2: 0, stdX1: 1, stdX2: 1 };
+
+            let meanX1 = 0, meanX2 = 0;
+            dataPoints.forEach(p => { meanX1 += p.x1; meanX2 += p.x2; });
+            meanX1 /= n; meanX2 /= n;
+
+            let stdX1 = 0, stdX2 = 0;
+            dataPoints.forEach(p => {
+                stdX1 += Math.pow(p.x1 - meanX1, 2);
+                stdX2 += Math.pow(p.x2 - meanX2, 2);
+            });
+            stdX1 = Math.sqrt(stdX1 / n) || 1;
+            stdX2 = Math.sqrt(stdX2 / n) || 1;
+
+            return { meanX1, meanX2, stdX1, stdX2 };
+        }
+
+        // Synthetic Cluster Dataset Generator
+        function generateRandomData(count = 60) {
+            dataPoints = [];
+            for (let i = 0; i < count / 2; i++) {
+                // Class 0 Cluster
+                dataPoints.push({
+                    x1: 20 + Math.random() * 30,
+                    x2: 20 + Math.random() * 30,
+                    target: 0
+                });
+                // Class 1 Cluster
+                dataPoints.push({
+                    x1: 55 + Math.random() * 30,
+                    x2: 55 + Math.random() * 30,
+                    target: 1
+                });
+            }
+            w1 = 0; w2 = 0; bias = 0;
+            document.getElementById('weightW1').value = 0;
+            document.getElementById('weightW2').value = 0;
+            document.getElementById('bias').value = 0;
+            iterCount = 0;
+            lossHistory = [];
+        }
+        generateRandomData();
+
+        // Custom Chart.js Plugin: Render Sigmoid Heatmap in Normalized Feature Space
+        const sigmoidHeatmapPlugin = {
+            id: 'sigmoidHeatmap',
+            beforeDraw: (chart) => {
+                const { ctx, chartArea: { left, top, width, height }, scales: { x, y } } = chart;
+                if (!width || !height || dataPoints.length === 0) return;
+
+                const stats = getNormalizationStats();
+                ctx.save();
+                const resolution = 6; // Heatmap grid cell size in px
+
+                for (let px = left; px < left + width; px += resolution) {
+                    for (let py = top; py < top + height; py += resolution) {
+                        const rawX1 = x.getValueForPixel(px);
+                        const rawX2 = y.getValueForPixel(py);
+
+                        // Normalize grid point coordinates
+                        const normX1 = (rawX1 - stats.meanX1) / stats.stdX1;
+                        const normX2 = (rawX2 - stats.meanX2) / stats.stdX2;
+
+                        // Compute Sigmoid probability
+                        const z = w1 * normX1 + w2 * normX2 + bias;
+                        const prob = sigmoid(z);
+
+                        // Interpolate RGB Color (Blue -> Pink)
+                        const r = Math.round(59 + prob * (236 - 59));
+                        const g = Math.round(130 + prob * (72 - 130));
+                        const b = Math.round(246 + prob * (153 - 246));
+
+                        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 0.35)`;
+                        ctx.fillRect(px, py, resolution, resolution);
+                    }
+                }
+                ctx.restore();
+            }
+        };
+
+        Chart.register(sigmoidHeatmapPlugin);
+
+        // 1. Feature Space Decision Chart Setup
+        const ctxDecision = document.getElementById('decisionChart').getContext('2d');
+        const decisionChart = new Chart(ctxDecision, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'Class 0 (Blue)',
+                        data: [],
+                        backgroundColor: '#1d4ed8',
+                        borderColor: '#ffffff',
+                        borderWidth: 1.5,
+                        pointRadius: 6
+                    },
+                    {
+                        label: 'Class 1 (Pink)',
+                        data: [],
+                        backgroundColor: '#be185d',
+                        borderColor: '#ffffff',
+                        borderWidth: 1.5,
+                        pointRadius: 6
+                    },
+                    {
+                        label: 'Decision Line (P = 0.5)',
+                        data: [],
+                        type: 'line',
+                        borderColor: '#0f172a',
+                        borderWidth: 3,
+                        borderDash: [5, 5],
+                        fill: false,
+                        pointRadius: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                scales: {
+                    x: { type: 'linear', min: 0, max: 100, title: { display: true, text: 'Feature X1' } },
+                    y: { min: 0, max: 100, title: { display: true, text: 'Feature X2' } }
+                }
+            }
+        });
+
+        // 2. Loss Optimization Curve Chart Setup
+        const ctxLoss = document.getElementById('lossChart').getContext('2d');
+        const lossChart = new Chart(ctxLoss, {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Binary Cross-Entropy Loss',
+                    data: [],
+                    borderColor: '#ef4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    pointRadius: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                scales: {
+                    x: { type: 'linear', title: { display: true, text: 'Iteration Step' } },
+                    y: { type: 'linear', title: { display: true, text: 'Log Loss' }, min: 0 }
+                }
+            }
+        });
+
+        // Compute Loss and Accuracy on Normalized Input Features
+        function computeMetrics() {
+            const n = dataPoints.length;
+            if (n === 0) return { loss: 0, accuracy: 0 };
+
+            const stats = getNormalizationStats();
+            let totalLoss = 0;
+            let correct = 0;
+
+            dataPoints.forEach(p => {
+                const normX1 = (p.x1 - stats.meanX1) / stats.stdX1;
+                const normX2 = (p.x2 - stats.meanX2) / stats.stdX2;
+
+                const z = w1 * normX1 + w2 * normX2 + bias;
+                const predProb = sigmoid(z);
+                
+                const eps = 1e-15;
+                const pClipped = Math.max(eps, Math.min(1 - eps, predProb));
+                
+                totalLoss += -(p.target * Math.log(pClipped) + (1 - p.target) * Math.log(1 - pClipped));
+
+                const predictedLabel = predProb >= 0.5 ? 1 : 0;
+                if (predictedLabel === p.target) correct++;
+            });
+
+            return {
+                loss: totalLoss / n,
+                accuracy: ((correct / n) * 100).toFixed(1)
+            };
+        }
+
+        // Normalized Gradient Descent Update Step
+        function stepGradientDescent() {
+            const n = dataPoints.length;
+            if (n === 0) return { gradW1: 0, gradW2: 0, gradB: 0 };
+
+            const alpha = parseFloat(document.getElementById('learningRateSelect').value);
+            const stats = getNormalizationStats();
+
+            let gradW1 = 0, gradW2 = 0, gradB = 0;
+
+            dataPoints.forEach(p => {
+                const normX1 = (p.x1 - stats.meanX1) / stats.stdX1;
+                const normX2 = (p.x2 - stats.meanX2) / stats.stdX2;
+
+                const z = w1 * normX1 + w2 * normX2 + bias;
+                const error = sigmoid(z) - p.target;
+                
+                gradW1 += (1 / n) * error * normX1;
+                gradW2 += (1 / n) * error * normX2;
+                gradB  += (1 / n) * error;
+            });
+
+            // Update weights
+            w1 -= alpha * gradW1;
+            w2 -= alpha * gradW2;
+            bias -= alpha * gradB;
+
+            document.getElementById('weightW1').value = w1;
+            document.getElementById('weightW2').value = w2;
+            document.getElementById('bias').value = bias;
+
+            iterCount++;
+            return { gradW1, gradW2, gradB };
+        }
+
+        // Visualization UI Update Loop
+        function updateVisualization(gradW1 = 0, gradW2 = 0) {
+            w1 = parseFloat(document.getElementById('weightW1').value);
+            w2 = parseFloat(document.getElementById('weightW2').value);
+            bias = parseFloat(document.getElementById('bias').value);
+
+            document.getElementById('w1Val').innerText = w1.toFixed(2);
+            document.getElementById('w2Val').innerText = w2.toFixed(2);
+            document.getElementById('biasVal').innerText = bias.toFixed(2);
+
+            const class0Data = dataPoints.filter(p => p.target === 0).map(p => ({ x: p.x1, y: p.x2 }));
+            const class1Data = dataPoints.filter(p => p.target === 1).map(p => ({ x: p.x1, y: p.x2 }));
+
+            // Map Normalized Decision Boundary обратно to Original Scale (0-100)
+            const stats = getNormalizationStats();
+            let boundaryLine = [];
+
+            if (dataPoints.length > 0 && Math.abs(w2) > 0.0001) {
+                // Decision boundary equation: w1 * ((X1 - μ1)/σ1) + w2 * ((X2 - μ2)/σ2) + b = 0
+                // Solving for X2 given X1:
+                const getOriginalX2 = (rawX1) => {
+                    const normX1 = (rawX1 - stats.meanX1) / stats.stdX1;
+                    const normX2 = (-w1 * normX1 - bias) / w2;
+                    return normX2 * stats.stdX2 + stats.meanX2;
+                };
+
+                boundaryLine = [
+                    { x: 0, y: getOriginalX2(0) },
+                    { x: 100, y: getOriginalX2(100) }
+                ];
+            }
+
+            decisionChart.data.datasets[0].data = class0Data;
+            decisionChart.data.datasets[1].data = class1Data;
+            decisionChart.data.datasets[2].data = boundaryLine;
+            decisionChart.update();
+
+            const { loss, accuracy } = computeMetrics();
+            lossHistory.push({ x: iterCount, y: loss });
+
+            lossChart.data.datasets[0].data = lossHistory;
+            lossChart.update();
+
+            document.getElementById('statIter').innerText = iterCount;
+            document.getElementById('statLoss').innerText = loss.toFixed(3);
+            document.getElementById('statAcc').innerText = `${accuracy}%`;
+            document.getElementById('statGradW1').innerText = gradW1.toFixed(3);
+            document.getElementById('statGradW2').innerText = gradW2.toFixed(3);
+        }
+
+        // Continuous Loop Runner
+        function runLoop() {
+            if (!isRunning) return;
+            const { gradW1, gradW2 } = stepGradientDescent();
+            updateVisualization(gradW1, gradW2);
+
+            if (Math.abs(gradW1) < 0.0005 && Math.abs(gradW2) < 0.0005) {
+                toggleRun(false);
+            } else {
+                animationFrameId = requestAnimationFrame(runLoop);
+            }
+        }
+
+        function toggleRun(state) {
+            isRunning = state !== undefined ? state : !isRunning;
+            const btn = document.getElementById('btnPlay');
+            if (isRunning) {
+                btn.innerText = "⏸ Pause GD";
+                btn.className = "w-1/2 bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition";
+                runLoop();
+            } else {
+                btn.innerText = "▶ Run GD";
+                btn.className = "w-1/2 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-3 rounded shadow text-xs transition";
+                if (animationFrameId) cancelAnimationFrame(animationFrameId);
+            }
+        }
+
+        // Class Selection for Canvas Point Adding
+        document.getElementById('btnClass0').addEventListener('click', () => {
+            activeAddClass = 0;
+            document.getElementById('btnClass0').className = "w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-2 rounded text-xs ring-2 ring-blue-800 transition";
+            document.getElementById('btnClass1').className = "w-1/2 bg-pink-600 hover:bg-pink-700 text-white font-bold py-1.5 px-2 rounded text-xs opacity-60 transition";
+        });
+        document.getElementById('btnClass1').addEventListener('click', () => {
+            activeAddClass = 1;
+            document.getElementById('btnClass1').className = "w-1/2 bg-pink-600 hover:bg-pink-700 text-white font-bold py-1.5 px-2 rounded text-xs ring-2 ring-pink-800 transition";
+            document.getElementById('btnClass0').className = "w-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-1.5 px-2 rounded text-xs opacity-60 transition";
+        });
+
+        // Add Data Points via Click
+        document.getElementById('decisionChart').addEventListener('click', (evt) => {
+            const canvasPosition = Chart.helpers.getRelativePosition(evt, decisionChart);
+            const dataX1 = decisionChart.scales.x.getValueForPixel(canvasPosition.x);
+            const dataX2 = decisionChart.scales.y.getValueForPixel(canvasPosition.y);
+
+            if (dataX1 >= 0 && dataX1 <= 100 && dataX2 >= 0 && dataX2 <= 100) {
+                dataPoints.push({ x1: dataX1, x2: dataX2, target: activeAddClass });
+                lossHistory = [];
+                updateVisualization();
+            }
+        });
+
+        // UI Event Listeners
+        document.getElementById('btnPlay').addEventListener('click', () => toggleRun());
+        document.getElementById('btnStep').addEventListener('click', () => {
+            toggleRun(false);
+            const { gradW1, gradW2 } = stepGradientDescent();
+            updateVisualization(gradW1, gradW2);
+        });
+
+        document.getElementById('btnResetParams').addEventListener('click', () => {
+            toggleRun(false);
+            w1 = 0; w2 = 0; bias = 0;
+            document.getElementById('weightW1').value = 0;
+            document.getElementById('weightW2').value = 0;
+            document.getElementById('bias').value = 0;
+            iterCount = 0;
+            lossHistory = [];
+            updateVisualization();
+        });
+
+        document.getElementById('btnGenerate').addEventListener('click', () => {
+            toggleRun(false);
+            generateRandomData();
+            updateVisualization();
+        });
+
+        document.getElementById('btnClear').addEventListener('click', () => {
+            toggleRun(false);
+            dataPoints = [];
+            lossHistory = [];
+            iterCount = 0;
+            updateVisualization();
+        });
+
+        ['weightW1', 'weightW2', 'bias'].forEach(id => {
+            document.getElementById(id).addEventListener('input', () => { toggleRun(false); updateVisualization(); });
+        });
+
+        // Launch app
+        updateVisualization();
+    </script>
+</body>
+</html>
