@@ -11,4 +11,4 @@ class Node:
     def is_leaf_node(self):
         return self.value is not None
 class DecisionTree:
-    def __int__():
+    
