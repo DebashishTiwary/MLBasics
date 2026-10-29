@@ -1,416 +1,416 @@
-Step,Category,Problem Name,Primary Topic,LeetCode Topics,Difficulty,Acceptance Rate (%),Time (Beginner) [min],Time (Medium) [min],Time (Expert) [min]
-Step 1,Learn the Basics,User Input / Output in C++ / Java / Python,Basic I/O,"Math, Number Theory",Easy,85,10,3,1
-Step 1,Learn the Basics,Data Types,Basics,"Math, Number Theory",Easy,82,10,3,1
-Step 1,Learn the Basics,If Else Statements,Control Flow,"Math, Number Theory",Easy,88,10,3,1
-Step 1,Learn the Basics,Switch Statement,Control Flow,"Math, Number Theory",Easy,85,10,3,1
-Step 1,Learn the Basics,For Loops & While Loops,Loops,"Math, Number Theory",Easy,80,12,4,2
-Step 1,Learn the Basics,Functions (Pass by Value and Reference),Functions,"Math, Number Theory",Easy,78,12,4,2
-Step 1,Learn the Basics,Time and Space Complexity,Theory,"Math, Number Theory",Easy,75,15,5,2
-Step 1,Learn the Basics,Pattern 1 to 22 (Star & Number Patterns),Patterns,"Math, Number Theory",Easy,70,20,8,3
-Step 1,Learn the Basics,Count Digits,Basic Math,"Math, Number Theory",Easy,78,10,3,2
-Step 1,Learn the Basics,Reverse Digits of a Number,Basic Math,"Math, Number Theory",Easy,62,15,5,3
-Step 1,Learn the Basics,Check Palindrome Number,Basic Math,"Math, Number Theory",Easy,68,15,5,2
-Step 1,Learn the Basics,GCD or HCF,Basic Math,"Math, Number Theory",Easy,65,15,5,2
-Step 1,Learn the Basics,Armstrong Numbers,Basic Math,"Math, Number Theory",Easy,64,15,5,2
-Step 1,Learn the Basics,Print all Divisors,Basic Math,"Math, Number Theory",Easy,58,20,7,3
-Step 1,Learn the Basics,Check for Prime,Basic Math,"Math, Number Theory",Easy,55,15,5,3
-Step 1,Learn the Basics,Understand Recursion by Print N times,Recursion,"Math, Number Theory",Easy,75,15,5,2
-Step 1,Learn the Basics,Print 1 to N using Recursion,Recursion,"Math, Number Theory",Easy,74,15,5,2
-Step 1,Learn the Basics,Print N to 1 using Recursion,Recursion,"Math, Number Theory",Easy,74,15,5,2
-Step 1,Learn the Basics,Sum of First N Numbers,Recursion,"Math, Number Theory",Easy,72,15,5,2
-Step 1,Learn the Basics,Factorial of N Numbers,Recursion,"Math, Number Theory",Easy,71,15,5,2
-Step 1,Learn the Basics,Reverse an Array using Recursion,Recursion,"Math, Number Theory",Easy,68,20,7,3
-Step 1,Learn the Basics,Check if String is Palindrome (Recursion),Recursion,"Math, Number Theory",Easy,66,20,7,3
-Step 1,Learn the Basics,Fibonacci Number (Recursive),Recursion,"Math, Number Theory",Easy,67,20,7,3
-Step 1,Learn the Basics,Count Frequencies of Array Elements,Hashing,"Math, Number Theory",Easy,62,20,8,3
-Step 1,Learn the Basics,Find Highest / Lowest Frequency Element,Hashing,"Math, Number Theory",Easy,60,20,8,3
-Step 1,Learn the Basics,C++ STL / Java Collections Overview,STL/Collections,"Math, Number Theory",Easy,80,25,10,4
-Step 2,Sorting Techniques,Selection Sort,Sorting,"Algorithms, Data Structures",Easy,72,20,8,3
-Step 2,Sorting Techniques,Bubble Sort,Sorting,"Algorithms, Data Structures",Easy,70,20,8,3
-Step 2,Sorting Techniques,Insertion Sort,Sorting,"Algorithms, Data Structures",Easy,68,20,8,3
-Step 2,Sorting Techniques,Merge Sort,Divide & Conquer,"Array, Sorting, Divide and Conquer",Medium,64,35,12,5
-Step 2,Sorting Techniques,Recursive Bubble Sort,Sorting,"Algorithms, Data Structures",Easy,62,25,10,4
-Step 2,Sorting Techniques,Recursive Insertion Sort,Sorting,"Algorithms, Data Structures",Easy,60,25,10,4
-Step 2,Sorting Techniques,Quick Sort,Divide & Conquer,"Array, Sorting, Divide and Conquer",Medium,58,35,12,5
-Step 3,Arrays,Largest Element in an Array,Arrays Easy,"Array, Sorting, Two Pointers",Easy,82,10,4,2
-Step 3,Arrays,Second Largest Element without Sorting,Arrays Easy,"Array, Sorting, Two Pointers",Easy,68,15,5,3
-Step 3,Arrays,Check if Array is Sorted,Arrays Easy,"Array, Sorting, Two Pointers",Easy,75,12,4,2
-Step 3,Arrays,Remove Duplicates from Sorted Array,Arrays Easy,"Array, Sorting, Two Pointers",Easy,55,15,6,2
-Step 3,Arrays,Left Rotate Array by One Place,Arrays Easy,"Array, Sorting, Two Pointers",Easy,74,12,5,2
-Step 3,Arrays,Left Rotate Array by K Places,Arrays Easy,"Array, Sorting, Two Pointers",Easy,65,20,7,3
-Step 3,Arrays,Move Zeros to End,Arrays Easy,"Array, Sorting, Two Pointers",Easy,61,20,7,3
-Step 3,Arrays,Linear Search,Arrays Easy,"Array, Sorting, Two Pointers",Easy,85,10,3,1
-Step 3,Arrays,Find Union and Intersection of Two Sorted Arrays,Arrays Easy,"Array, Sorting, Two Pointers",Easy,52,25,10,4
-Step 3,Arrays,Find Missing Number in Array,Arrays Easy,"Array, Sorting, Two Pointers",Easy,63,20,7,3
-Step 3,Arrays,Maximum Consecutive Ones,Arrays Easy,"Array, Sorting, Two Pointers",Easy,57,18,6,2
-Step 3,Arrays,Find Element Appearing Once (Others Twice),Arrays Easy,"Array, Sorting, Two Pointers",Easy,70,20,7,3
-Step 3,Arrays,Longest Subarray with Sum K (Positives),Arrays Easy,"Array, Sorting, Two Pointers",Easy,48,30,12,5
-Step 3,Arrays,Longest Subarray with Sum K (Positives + Negatives),Arrays Medium,"Array, Sorting, Two Pointers",Medium,38,40,15,6
-Step 3,Arrays,Two Sum Problem,Arrays Medium,"Array, Hash Table",Easy,52,20,8,4
-Step 3,Arrays,"Sort an Array of 0s, 1s and 2s (Dutch National Flag)",Arrays Medium,"Array, Sorting, Two Pointers",Medium,62,25,10,4
-Step 3,Arrays,Majority Element (> N/2 times),Arrays Medium,"Array, Sorting, Two Pointers",Medium,63,30,10,5
-Step 3,Arrays,Kadane's Algorithm - Maximum Subarray Sum,Arrays Medium,"Array, Dynamic Programming, Divide and Conquer",Medium,51,40,15,7
-Step 3,Arrays,Print Subarray with Maximum Subarray Sum,Arrays Medium,"Array, Dynamic Programming, Divide and Conquer",Medium,48,35,14,6
-Step 3,Arrays,Stock Buy and Sell,Arrays Medium,"Array, Sorting, Two Pointers",Easy,54,20,8,3
-Step 3,Arrays,Rearrange Array Elements by Sign,Arrays Medium,"Array, Sorting, Two Pointers",Medium,71,30,12,5
-Step 3,Arrays,Next Permutation,Arrays Medium,"Array, Sorting, Two Pointers",Medium,38,45,18,7
-Step 3,Arrays,Leaders in an Array,Arrays Medium,"Array, Sorting, Two Pointers",Easy,66,20,8,3
-Step 3,Arrays,Longest Consecutive Sequence,Arrays Medium,"Array, Sorting, Two Pointers",Medium,49,35,15,6
-Step 3,Arrays,Set Matrix Zeroes,Arrays Medium,"Array, Sorting, Two Pointers",Medium,54,40,15,6
-Step 3,Arrays,Rotate Matrix / Image by 90 Degrees,Arrays Medium,"Array, Sorting, Two Pointers",Medium,72,35,12,5
-Step 3,Arrays,Spiral Traversal of Matrix,Arrays Medium,"Array, Sorting, Two Pointers",Medium,49,40,15,6
-Step 3,Arrays,Count Subarrays with Given Sum,Arrays Medium,"Array, Sorting, Two Pointers",Medium,44,35,14,6
-Step 3,Arrays,Pascal's Triangle,Arrays Hard,"Array, Sorting, Two Pointers",Medium,70,30,12,5
-Step 3,Arrays,Majority Element (> N/3 times),Arrays Hard,"Array, Sorting, Two Pointers",Medium,50,40,15,6
-Step 3,Arrays,3-Sum Problem,Arrays Hard,"Array, Sorting, Two Pointers",Medium,34,45,20,8
-Step 3,Arrays,4-Sum Problem,Arrays Hard,"Array, Sorting, Two Pointers",Medium,36,50,22,8
-Step 3,Arrays,Largest Subarray with 0 Sum,Arrays Hard,"Array, Sorting, Two Pointers",Medium,46,35,15,6
-Step 3,Arrays,Count Subarrays with Given XOR K,Arrays Hard,"Array, Sorting, Two Pointers",Medium,58,40,18,7
-Step 3,Arrays,Merge Overlapping Subintervals,Arrays Hard,"Array, Sorting, Two Pointers",Medium,47,40,18,7
-Step 3,Arrays,Merge Two Sorted Arrays Without Extra Space,Arrays Hard,"Array, Sorting, Two Pointers",Hard,42,50,22,9
-Step 3,Arrays,Find Repeating and Missing Number,Arrays Hard,"Array, Sorting, Two Pointers",Medium,40,40,18,7
-Step 3,Arrays,Count Inversions in Array,Arrays Hard,"Array, Sorting, Two Pointers",Hard,40,60,25,10
-Step 3,Arrays,Reverse Pairs,Arrays Hard,"Array, Sorting, Two Pointers",Hard,31,65,28,11
-Step 3,Arrays,Maximum Product Subarray,Arrays Hard,"Array, Sorting, Two Pointers",Medium,35,45,18,7
-Step 4,Binary Search,Binary Search to find X in sorted array,BS 1D,"Array, Binary Search",Easy,56,15,5,3
-Step 4,Binary Search,Implement Lower Bound,BS 1D,"Array, Binary Search",Easy,60,20,7,3
-Step 4,Binary Search,Implement Upper Bound,BS 1D,"Array, Binary Search",Easy,58,20,7,3
-Step 4,Binary Search,Search Insert Position,BS 1D,"Array, Binary Search",Easy,46,20,7,3
-Step 4,Binary Search,Floor / Ceil in Sorted Array,BS 1D,"Array, Binary Search",Easy,54,20,8,3
-Step 4,Binary Search,First and Last Occurrence in Array,BS 1D,"Array, Binary Search",Medium,42,25,10,4
-Step 4,Binary Search,Count Occurrences in Sorted Array,BS 1D,"Array, Binary Search",Medium,58,25,10,4
-Step 4,Binary Search,Search in Rotated Sorted Array I,BS 1D,"Array, Binary Search",Medium,40,40,15,6
-Step 4,Binary Search,Search in Rotated Sorted Array II (Duplicates),BS 1D,"Array, Binary Search",Medium,36,45,18,7
-Step 4,Binary Search,Find Minimum in Rotated Sorted Array,BS 1D,"Array, Binary Search",Medium,52,35,14,5
-Step 4,Binary Search,Find out how many times array is rotated,BS 1D,"Array, Binary Search",Medium,50,30,12,5
-Step 4,Binary Search,Single Element in Sorted Array,BS 1D,"Array, Binary Search",Medium,59,35,15,6
-Step 4,Binary Search,Find Peak Element,BS 1D,"Array, Binary Search",Medium,47,35,15,6
-Step 4,Binary Search,Find Square Root of N using Binary Search,BS Answers,"Array, Binary Search",Easy,45,25,10,4
-Step 4,Binary Search,Find Nth Root of M,BS Answers,"Array, Binary Search",Medium,42,30,12,5
-Step 4,Binary Search,Koko Eating Bananas,BS Answers,"Array, Binary Search",Medium,51,45,18,7
-Step 4,Binary Search,Minimum days to make M bouquets,BS Answers,"Array, Binary Search",Medium,54,45,18,7
-Step 4,Binary Search,Find the Smallest Divisor Given a Threshold,BS Answers,"Array, Binary Search",Medium,57,45,18,7
-Step 4,Binary Search,Capacity to Ship Packages Within D Days,BS Answers,"Array, Binary Search",Medium,68,45,18,7
-Step 4,Binary Search,Kth Missing Positive Number,BS Answers,"Array, Binary Search",Easy,60,30,12,5
-Step 4,Binary Search,Aggressive Cows,BS Answers,"Array, Binary Search",Hard,35,70,35,12
-Step 4,Binary Search,Book Allocation Problem,BS Answers,"Array, Binary Search",Hard,38,70,30,12
-Step 4,Binary Search,Split Array - Largest Sum,BS Answers,"Array, Binary Search",Hard,54,65,28,11
-Step 4,Binary Search,Painter's Partition Problem,BS Answers,"Array, Binary Search",Hard,48,65,28,11
-Step 4,Binary Search,Minimize Max Distance to Gas Station,BS Answers,"Array, Binary Search",Hard,38,80,35,14
-Step 4,Binary Search,Median of 2 Sorted Arrays,BS Answers,"Array, Binary Search, Divide and Conquer",Hard,38,75,32,13
-Step 4,Binary Search,K-th Element of Two Sorted Arrays,BS Answers,"Array, Binary Search",Medium,50,50,22,9
-Step 4,Binary Search,Search in 2D Matrix I,BS 2D,"Array, Binary Search",Medium,49,35,14,5
-Step 4,Binary Search,Search in 2D Matrix II,BS 2D,"Array, Binary Search",Medium,51,35,14,5
-Step 4,Binary Search,Find Peak Element II (2D),BS 2D,"Array, Binary Search",Hard,37,60,25,10
-Step 4,Binary Search,Matrix Median,BS 2D,"Array, Binary Search",Hard,42,65,28,11
-Step 4,Binary Search,Find Row with Maximum 1s,BS 2D,"Array, Binary Search",Easy,62,25,10,4
-Step 5,Strings,Remove Outer Parentheses,Strings Basic,"String, Hash Table",Easy,81,15,5,2
-Step 5,Strings,Reverse Words in a String,Strings Basic,"String, Hash Table",Medium,44,25,10,4
-Step 5,Strings,Largest Odd Number in String,Strings Basic,"String, Hash Table",Easy,64,15,5,2
-Step 5,Strings,Longest Common Prefix,Strings Basic,"String, Hash Table",Easy,42,20,8,3
-Step 5,Strings,Isomorphic Strings,Strings Basic,"String, Hash Table",Easy,43,20,8,3
-Step 5,Strings,Check if One String is Rotation of Another,Strings Basic,"String, Hash Table",Easy,45,20,8,3
-Step 5,Strings,Check for Anagrams,Strings Basic,"String, Hash Table",Easy,63,15,6,2
-Step 5,Strings,Sort Characters by Frequency,Strings Medium,"String, Hash Table",Medium,70,25,10,4
-Step 5,Strings,Maximum Nesting Depth of Parentheses,Strings Medium,"String, Hash Table",Easy,82,15,5,2
-Step 5,Strings,Roman to Integer,Strings Medium,"String, Hash Table",Easy,61,20,7,3
-Step 5,Strings,Integer to Roman,Strings Medium,"String, Hash Table",Medium,63,30,12,5
-Step 5,Strings,String to Integer (atoi),Strings Medium,"String, Hash Table",Medium,17,45,18,7
-Step 5,Strings,Count Number of Substrings with K Distinct Chars,Strings Medium,"String, Hash Table",Medium,40,40,18,7
-Step 5,Strings,Longest Palindromic Substring,Strings Medium,"String, Dynamic Programming",Medium,34,50,22,9
-Step 5,Strings,Sum of Beauty of All Substrings,Strings Medium,"String, Hash Table",Medium,65,40,18,7
-Step 6,Linked List,Introduction to Linked List & Node Creation,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,80,15,5,2
-Step 6,Linked List,Insert / Delete Node in Linked List,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,75,20,7,3
-Step 6,Linked List,Length of Linked List,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,85,10,3,1
-Step 6,Linked List,Search an Element in Linked List,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,82,10,4,2
-Step 6,Linked List,Introduction to Doubly Linked List,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,78,15,6,2
-Step 6,Linked List,Insert / Delete Node in Doubly Linked List,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,72,20,8,3
-Step 6,Linked List,Reverse a Doubly Linked List,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,70,20,8,3
-Step 6,Linked List,Middle of Linked List (Tortoise-Hare),LL Medium,"Array, Binary Search, Dynamic Programming",Easy,76,15,5,3
-Step 6,Linked List,Reverse a Linked List (Iterative),LL Medium,"Array, Binary Search, Dynamic Programming",Easy,74,20,8,3
-Step 6,Linked List,Reverse a Linked List (Recursive),LL Medium,"Array, Binary Search, Dynamic Programming",Easy,70,20,8,3
-Step 6,Linked List,Detect a Cycle in Linked List,LL Medium,"Linked List, Two Pointers, Hash Table",Easy,49,20,8,4
-Step 6,Linked List,Find Starting Point of Cycle in LL,LL Medium,"Linked List, Two Pointers",Medium,50,30,12,5
-Step 6,Linked List,Length of Loop in Linked List,LL Medium,"Array, Binary Search, Dynamic Programming",Easy,60,25,10,4
-Step 6,Linked List,Check if LL is Palindrome,LL Medium,"Linked List, Two Pointers",Easy,51,30,12,5
-Step 6,Linked List,Segregate Odd and Even Nodes in LL,LL Medium,"Linked List, Two Pointers",Medium,61,30,12,5
-Step 6,Linked List,Remove Nth Node from End of LL,LL Medium,"Linked List, Two Pointers",Medium,43,30,12,5
-Step 6,Linked List,Delete Middle Node of LL,LL Medium,"Linked List, Two Pointers",Medium,64,25,10,4
-Step 6,Linked List,Sort Linked List (Merge Sort),LL Medium,"Array, Binary Search, Dynamic Programming",Medium,56,40,15,6
-Step 6,Linked List,"Sort LL of 0s, 1s and 2s",LL Medium,"Linked List, Two Pointers",Easy,68,20,8,3
-Step 6,Linked List,Find Intersection Point of Y Linked List,LL Medium,"Array, Binary Search, Dynamic Programming",Medium,56,35,14,5
-Step 6,Linked List,Add 1 to a Number Represented as LL,LL Medium,"Linked List, Two Pointers",Medium,62,30,12,5
-Step 6,Linked List,Add Two Numbers in LL,LL Medium,"Linked List, Two Pointers",Medium,41,35,15,6
-Step 6,Linked List,Delete all Occurrences of Key in DLL,DLL Medium,"Linked List, Two Pointers",Medium,65,25,10,4
-Step 6,Linked List,Find Pairs with Given Sum in DLL,DLL Medium,"Linked List, Two Pointers",Easy,70,20,8,3
-Step 6,Linked List,Remove Duplicates from Sorted DLL,DLL Medium,"Linked List, Two Pointers",Easy,72,20,8,3
-Step 6,Linked List,Reverse Nodes in k-Group,LL Hard,"Linked List, Recursion",Hard,58,80,35,14
-Step 6,Linked List,Rotate a Linked List,LL Hard,"Array, Binary Search, Dynamic Programming",Medium,45,35,15,6
-Step 6,Linked List,Flattening of a Linked List,LL Hard,"Array, Binary Search, Dynamic Programming",Medium,56,45,20,8
-Step 6,Linked List,Clone Linked List with Random and Next Pointer,LL Hard,"Array, Binary Search, Dynamic Programming",Hard,54,60,25,10
-Step 7,Recursion & Backtracking,Recursive Implementation of atoi(),Recursion,"Recursion, Backtracking",Medium,50,30,12,5
-Step 7,Recursion & Backtracking,"Pow(x, n) - Binary Exponentiation",Recursion,"Recursion, Backtracking",Medium,34,30,12,5
-Step 7,Recursion & Backtracking,Count Good Numbers,Recursion,"Recursion, Backtracking",Medium,42,35,15,6
-Step 7,Recursion & Backtracking,Sort a Stack using Recursion,Recursion,"Recursion, Backtracking",Medium,68,25,10,4
-Step 7,Recursion & Backtracking,Reverse a Stack using Recursion,Recursion,"Recursion, Backtracking",Medium,70,25,10,4
-Step 7,Recursion & Backtracking,Generate All Binary Strings without Consecutive 1s,Subsequences,"Recursion, Backtracking",Medium,65,25,10,4
-Step 7,Recursion & Backtracking,Generate Parentheses,Subsequences,"Recursion, Backtracking",Medium,73,35,15,6
-Step 7,Recursion & Backtracking,Print all Subsequences / Power Set,Subsequences,"Recursion, Backtracking",Medium,66,30,12,5
-Step 7,Recursion & Backtracking,Subsets I (Sum of all Subsets),Subsequences,"Array, Backtracking, Bit Manipulation",Easy,72,25,10,4
-Step 7,Recursion & Backtracking,Subsets II (Unique Subsets),Subsequences,"Array, Backtracking, Bit Manipulation",Medium,56,35,15,6
-Step 7,Recursion & Backtracking,Combination Sum I,Backtracking,"Array, Backtracking",Medium,69,45,20,8
-Step 7,Recursion & Backtracking,Combination Sum II,Backtracking,"Array, Backtracking",Medium,54,45,20,8
-Step 7,Recursion & Backtracking,Combination Sum III,Backtracking,"Array, Backtracking",Medium,68,35,15,6
-Step 7,Recursion & Backtracking,Subset Sum I & II,Backtracking,"Array, Backtracking, Bit Manipulation",Medium,60,35,15,6
-Step 7,Recursion & Backtracking,Letter Combinations of a Phone Number,Backtracking,"Recursion, Backtracking",Medium,59,40,18,7
-Step 7,Recursion & Backtracking,Palindrome Partitioning,Backtracking,"Recursion, Backtracking",Medium,67,45,20,8
-Step 7,Recursion & Backtracking,Word Search,Backtracking,"Array, String, Backtracking, Matrix",Medium,41,50,22,9
-Step 7,Recursion & Backtracking,N-Queens,Backtracking,Backtracking,Hard,66,75,35,15
-Step 7,Recursion & Backtracking,Sudoku Solver,Backtracking,"Array, Backtracking, Matrix",Hard,60,80,38,15
-Step 7,Recursion & Backtracking,M-Coloring Problem,Backtracking,"Recursion, Backtracking",Medium,55,50,22,9
-Step 7,Recursion & Backtracking,Rat in a Maze,Backtracking,"Recursion, Backtracking",Medium,48,45,20,8
-Step 7,Recursion & Backtracking,Word Break - Backtracking,Backtracking,"Recursion, Backtracking",Hard,46,65,28,11
-Step 8,Bit Manipulation,Check if i-th bit is set or not,Bit Basics,"Bit Manipulation, Math",Easy,75,15,5,2
-Step 8,Bit Manipulation,Set / Clear / Toggle i-th bit,Bit Basics,"Bit Manipulation, Math",Easy,78,15,5,2
-Step 8,Bit Manipulation,Check if number is Odd or Even using Bitwise,Bit Basics,"Bit Manipulation, Math",Easy,88,10,3,1
-Step 8,Bit Manipulation,Check if number is Power of 2,Bit Basics,"Bit Manipulation, Math",Easy,70,12,4,2
-Step 8,Bit Manipulation,Count Set Bits,Bit Basics,"Bit Manipulation, Math",Easy,70,15,5,2
-Step 8,Bit Manipulation,Set the Unset Bit,Bit Basics,"Bit Manipulation, Math",Easy,80,10,4,2
-Step 8,Bit Manipulation,Swap Two Numbers without Third Variable,Bit Basics,"Bit Manipulation, Math",Easy,85,10,3,1
-Step 8,Bit Manipulation,"Divide Two Integers without *, / operator",Bit Medium,"Bit Manipulation, Math",Medium,21,45,20,8
-Step 8,Bit Manipulation,Count Bits to Flip to Convert A to B,Bit Medium,"Bit Manipulation, Math",Easy,82,15,6,2
-Step 8,Bit Manipulation,Find the Single Number I,Bit Medium,"Bit Manipulation, Math",Easy,72,15,6,2
-Step 8,Bit Manipulation,Find Subsets / Power Set using Bits,Bit Medium,"Array, Backtracking, Bit Manipulation",Medium,66,25,10,4
-Step 8,Bit Manipulation,Find Two Numbers Appearing Odd Times,Bit Medium,"Bit Manipulation, Math",Medium,60,30,12,5
-Step 8,Bit Manipulation,Single Number III,Bit Medium,"Bit Manipulation, Math",Medium,67,30,12,5
-Step 8,Bit Manipulation,"XOR of Numbers in Range [L, R]",Bit Medium,"Bit Manipulation, Math",Medium,55,25,10,4
-Step 8,Bit Manipulation,Print Prime Factors of a Number,Advanced Math,"Bit Manipulation, Math",Medium,52,25,10,4
-Step 8,Bit Manipulation,Sieve of Eratosthenes,Advanced Math,"Bit Manipulation, Math",Medium,68,25,10,4
-Step 8,Bit Manipulation,Prime Factorization using Sieve,Advanced Math,"Bit Manipulation, Math",Medium,58,35,15,6
-Step 8,Bit Manipulation,"Power (x, n) - Modular Exponentiation",Advanced Math,"Bit Manipulation, Math",Medium,50,30,12,5
-Step 9,Stack & Queue,Implement Stack using Arrays,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,80,15,5,2
-Step 9,Stack & Queue,Implement Queue using Arrays,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,80,15,5,2
-Step 9,Stack & Queue,Implement Stack using Queue,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,62,20,8,3
-Step 9,Stack & Queue,Implement Queue using Stack,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,65,20,8,3
-Step 9,Stack & Queue,Implement Stack using Linked List,Implementation,"Array, Binary Search, Dynamic Programming",Easy,75,15,6,2
-Step 9,Stack & Queue,Implement Queue using Linked List,Implementation,"Array, Binary Search, Dynamic Programming",Easy,75,15,6,2
-Step 9,Stack & Queue,Check for Balanced Parentheses,Implementation,"String, Stack",Easy,68,20,7,3
-Step 9,Stack & Queue,Implement Min Stack,Implementation,"Stack, Queue, Design, Monotonic Stack",Medium,53,30,12,5
-Step 9,Stack & Queue,Infix to Postfix Conversion,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,55,30,12,5
-Step 9,Stack & Queue,Prefix to Infix Conversion,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,60,25,10,4
-Step 9,Stack & Queue,Prefix to Postfix Conversion,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,62,25,10,4
-Step 9,Stack & Queue,Postfix to Prefix Conversion,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,63,25,10,4
-Step 9,Stack & Queue,Postfix to Infix Conversion,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,61,25,10,4
-Step 9,Stack & Queue,Next Greater Element I,Monotonic Stack,"Array, Stack, Monotonic Stack, Hash Table",Medium,72,35,14,5
-Step 9,Stack & Queue,Next Greater Element II (Circular),Monotonic Stack,"Array, Stack, Monotonic Stack, Hash Table",Medium,63,35,15,6
-Step 9,Stack & Queue,Next Smaller Element,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,65,30,12,5
-Step 9,Stack & Queue,Number of NGEs to the Right,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,58,30,12,5
-Step 9,Stack & Queue,Trapping Rainwater,Monotonic Stack,"Array, Two Pointers, Stack, Dynamic Programming, Monotonic Stack",Hard,60,75,30,12
-Step 9,Stack & Queue,Asteroid Collision,Monotonic Stack,"Array, Binary Search, Dynamic Programming",Medium,45,35,15,6
-Step 9,Stack & Queue,Sum of Subarray Minimums,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,35,50,22,9
-Step 9,Stack & Queue,Sum of Subarray Ranges,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,60,45,20,8
-Step 9,Stack & Queue,Remove K Digits,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,31,40,18,7
-Step 9,Stack & Queue,Largest Rectangle in Histogram,Monotonic Stack,"Array, Stack, Monotonic Stack",Hard,44,60,25,10
-Step 9,Stack & Queue,Maximal Rectangle (2D Matrix),Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Hard,46,65,28,11
-Step 9,Stack & Queue,Sliding Window Maximum,Monotonic Stack,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",Hard,47,55,24,9
-Step 9,Stack & Queue,Online Stock Span,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,65,30,12,5
-Step 9,Stack & Queue,Celebrity Problem,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,42,40,18,7
-Step 9,Stack & Queue,LRU Cache,Design,"Hash Table, Linked List, Design, Doubly-Linked List",Hard,42,80,35,13
-Step 9,Stack & Queue,LFU Cache,Design,"Stack, Queue, Design, Monotonic Stack",Hard,35,90,40,16
-Step 10,Sliding Window,Longest Substring Without Repeating Characters,Sliding Window,"String, Hash Table, Sliding Window",Medium,35,40,18,6
-Step 10,Sliding Window,Max Consecutive Ones III,Sliding Window,"Algorithms, Data Structures",Medium,63,35,15,6
-Step 10,Sliding Window,Fruit Into Baskets,Sliding Window,"Algorithms, Data Structures",Medium,43,35,15,6
-Step 10,Sliding Window,Longest Repeating Character Replacement,Sliding Window,"Algorithms, Data Structures",Medium,54,40,18,7
-Step 10,Sliding Window,Binary Subarrays With Sum,Sliding Window,"Algorithms, Data Structures",Medium,60,35,15,6
-Step 10,Sliding Window,Count Number of Nice Subarrays,Sliding Window,"Algorithms, Data Structures",Medium,65,35,15,6
-Step 10,Sliding Window,Subarrays with K Different Integers,Sliding Window,"Algorithms, Data Structures",Hard,55,60,25,10
-Step 10,Sliding Window,Minimum Window Substring,Sliding Window,"String, Hash Table, Sliding Window",Hard,41,85,40,15
-Step 10,Sliding Window,Minimum Window Subsequence,Sliding Window,"Algorithms, Data Structures",Hard,42,85,40,15
-Step 10,Sliding Window,Number of Substrings Containing All Three Characters,Sliding Window,"Algorithms, Data Structures",Medium,64,35,15,6
-Step 10,Sliding Window,Maximum Points You Can Obtain from Cards,Sliding Window,"Algorithms, Data Structures",Medium,52,35,15,6
-Step 11,Heaps,Introduction to Priority Queue and Heap Implementation,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,75,20,8,3
-Step 11,Heaps,Min Heap and Max Heap Implementation,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,72,25,10,4
-Step 11,Heaps,Check if Array Represents Min Heap,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,78,15,6,2
-Step 11,Heaps,Convert Min Heap to Max Heap,Heap Basic,"Heap (Priority Queue), Array, Design",Medium,68,20,8,3
-Step 11,Heaps,Kth Largest Element in Array,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,67,25,10,4
-Step 11,Heaps,Kth Smallest Element in Array,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,65,25,10,4
-Step 11,Heaps,Kth Largest Element in a Stream,Heap Medium,"Heap (Priority Queue), Array, Design",Easy,55,25,10,4
-Step 11,Heaps,Merge K Sorted Arrays,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,68,35,15,6
-Step 11,Heaps,Merge K Sorted Lists,Heap Hard,"Array, Binary Search, Dynamic Programming",Hard,51,60,25,10
-Step 11,Heaps,Replace Elements by Rank in Array,Heap Medium,"Heap (Priority Queue), Array, Design",Easy,64,20,8,3
-Step 11,Heaps,Task Scheduler,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,57,40,18,7
-Step 11,Heaps,Hands of Straights,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,56,40,18,7
-Step 11,Heaps,Design Twitter,Heap Design,"Heap (Priority Queue), Array, Design",Medium,38,50,22,9
-Step 11,Heaps,Find Median from Data Stream,Heap Hard,"Heap (Priority Queue), Array, Design",Hard,51,75,32,12
-Step 11,Heaps,Top K Frequent Elements,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,63,30,12,5
-Step 12,Greedy Algorithms,Assign Cookies,Greedy Easy,"Greedy, Sorting, Array",Easy,52,15,6,2
-Step 12,Greedy Algorithms,Fractional Knapsack,Greedy Medium,Dynamic Programming,Medium,55,30,12,5
-Step 12,Greedy Algorithms,Find Minimum Number of Coins (Greedy),Greedy Easy,"Greedy, Sorting, Array",Easy,60,20,8,3
-Step 12,Greedy Algorithms,Lemonade Change,Greedy Easy,"Greedy, Sorting, Array",Easy,53,15,6,2
-Step 12,Greedy Algorithms,Valid Parenthesis String,Greedy Medium,"Greedy, Sorting, Array",Medium,36,35,15,6
-Step 12,Greedy Algorithms,N Meetings in One Room,Greedy Easy,"Greedy, Sorting, Array",Easy,45,25,10,4
-Step 12,Greedy Algorithms,Non-overlapping Intervals,Greedy Medium,"Greedy, Sorting, Array",Medium,52,35,15,6
-Step 12,Greedy Algorithms,Insert Interval,Greedy Medium,"Greedy, Sorting, Array",Medium,39,35,15,6
-Step 12,Greedy Algorithms,Merge Intervals,Greedy Medium,"Greedy, Sorting, Array",Medium,47,40,18,7
-Step 12,Greedy Algorithms,Minimum Platforms Required,Greedy Medium,"Greedy, Sorting, Array",Medium,48,40,18,7
-Step 12,Greedy Algorithms,Job Sequencing Problem,Greedy Medium,"Greedy, Sorting, Array",Medium,46,40,18,7
-Step 12,Greedy Algorithms,Candy Distribution Problem,Greedy Hard,"Greedy, Sorting, Array",Hard,42,60,25,10
-Step 12,Greedy Algorithms,Program for Shortest Job First (SJF) CPU Scheduling,Greedy Medium,"Greedy, Sorting, Array",Medium,70,25,10,4
-Step 12,Greedy Algorithms,LRU Page Replacement Algorithm,Greedy Medium,"Greedy, Sorting, Array",Medium,65,30,12,5
-Step 13,Binary Trees,Binary Tree Inorder Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,75,15,5,3
-Step 13,Binary Trees,Binary Tree Preorder Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,74,15,5,3
-Step 13,Binary Trees,Binary Tree Postorder Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,76,15,5,3
-Step 13,Binary Trees,Level Order Traversal / BFS,Tree Traversal,"Tree, Binary Tree, Breadth-First Search",Medium,67,25,10,4
-Step 13,Binary Trees,Iterative Preorder Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,68,25,10,4
-Step 13,Binary Trees,Iterative Inorder Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,66,25,10,4
-Step 13,Binary Trees,Iterative Postorder Traversal (1 Stack & 2 Stacks),Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,58,35,15,6
-Step 13,Binary Trees,All Traversals in One Traversal,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,62,30,12,5
-Step 13,Binary Trees,Maximum Depth / Height of Binary Tree,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,74,15,5,2
-Step 13,Binary Trees,Check for Balanced Binary Tree,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,50,20,8,3
-Step 13,Binary Trees,Diameter of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,58,30,12,5
-Step 13,Binary Trees,Maximum Path Sum in Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Hard,39,50,22,9
-Step 13,Binary Trees,Check if Two Trees are Identical,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,70,20,8,3
-Step 13,Binary Trees,Zig-Zag / Spiral Level Order Traversal,Tree Medium,"Tree, Binary Tree, Breadth-First Search",Medium,57,30,12,5
-Step 13,Binary Trees,Boundary Traversal of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,42,40,18,7
-Step 13,Binary Trees,Vertical Order Traversal of Binary Tree,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,45,55,24,9
-Step 13,Binary Trees,Top View of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,44,35,15,6
-Step 13,Binary Trees,Bottom View of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,46,35,15,6
-Step 13,Binary Trees,Right / Left View of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,62,25,10,4
-Step 13,Binary Trees,Symmetric Binary Tree,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,55,20,8,3
-Step 13,Binary Trees,Root to Node Path in Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,58,30,12,5
-Step 13,Binary Trees,Lowest Common Ancestor (LCA),Tree Medium,"Tree, Binary Tree, Depth-First Search, Recursion",Medium,62,35,15,6
-Step 13,Binary Trees,Maximum Width of Binary Tree,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,42,40,18,7
-Step 13,Binary Trees,Check for Children Sum Property,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,50,30,12,5
-Step 13,Binary Trees,Print All Nodes at Distance K in Binary Tree,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,62,60,25,10
-Step 13,Binary Trees,Min Time Taken to Burn Binary Tree from Node,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,54,60,25,10
-Step 13,Binary Trees,Count Complete Tree Nodes,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,61,35,15,6
-Step 13,Binary Trees,Construct BT from Preorder and Inorder,Tree Hard,"Tree, Binary Tree, Depth-First Search",Medium,62,45,20,8
-Step 13,Binary Trees,Construct BT from Postorder and Inorder,Tree Hard,"Tree, Binary Tree, Depth-First Search",Medium,60,45,20,8
-Step 13,Binary Trees,Serialize and Deserialize Binary Tree,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,56,65,28,11
-Step 13,Binary Trees,Morris Inorder Traversal,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,60,45,20,8
-Step 13,Binary Trees,Flatten Binary Tree to Linked List,Tree Hard,"Array, Binary Search, Dynamic Programming",Medium,63,40,18,7
-Step 14,Binary Search Trees,Introduction to Binary Search Trees,BST Basic,"Array, Binary Search",Easy,80,10,4,2
-Step 14,Binary Search Trees,Search in a Binary Search Tree,BST Basic,"Array, Binary Search",Easy,78,15,5,2
-Step 14,Binary Search Trees,Find Min / Max in BST,BST Basic,"Array, Binary Search",Easy,85,10,3,1
-Step 14,Binary Search Trees,Ceil in a Binary Search Tree,BST Basic,"Array, Binary Search",Medium,65,20,8,3
-Step 14,Binary Search Trees,Floor in a Binary Search Tree,BST Basic,"Array, Binary Search",Medium,63,20,8,3
-Step 14,Binary Search Trees,Insert a Given Node in BST,BST Basic,"Array, Binary Search",Medium,50,25,10,4
-Step 14,Binary Search Trees,Delete a Node in BST,BST Medium,"Array, Binary Search",Medium,51,40,18,7
-Step 14,Binary Search Trees,Kth Smallest / Largest Element in BST,BST Medium,"Array, Binary Search",Medium,70,30,12,5
-Step 14,Binary Search Trees,Validate Binary Search Tree,BST Medium,"Array, Binary Search",Medium,53,35,15,6
-Step 14,Binary Search Trees,Lowest Common Ancestor in BST,BST Medium,"Tree, Binary Tree, Depth-First Search, Recursion",Easy,63,25,10,4
-Step 14,Binary Search Trees,Construct BST from Preorder Traversal,BST Medium,"Array, Binary Search",Medium,66,35,15,6
-Step 14,Binary Search Trees,Inorder Successor / Predecessor in BST,BST Medium,"Array, Binary Search",Medium,48,30,12,5
-Step 14,Binary Search Trees,BST Iterator,BST Design,"Array, Binary Search",Medium,71,35,15,6
-Step 14,Binary Search Trees,Two Sum in BST (Check if Pair Exists),BST Medium,"Array, Binary Search",Medium,61,30,12,5
-Step 14,Binary Search Trees,Recover BST (Correct Swapped Nodes),BST Hard,"Array, Binary Search",Hard,52,60,25,10
-Step 14,Binary Search Trees,Largest BST in Binary Tree,BST Hard,"Array, Binary Search",Hard,40,65,28,11
-Step 15,Graphs,Graph Representation in C++ / Java (Matrix vs List),Graph Basic,"Array, Binary Search, Dynamic Programming",Easy,82,15,6,2
-Step 15,Graphs,BFS Traversal of Graph,Graph Traversal,"Tree, Binary Tree, Breadth-First Search",Medium,58,30,12,5
-Step 15,Graphs,DFS Traversal of Graph,Graph Traversal,"Graph, Breadth-First Search, Depth-First Search",Medium,58,30,12,5
-Step 15,Graphs,Number of Provinces,Graph Components,"Graph, Breadth-First Search, Depth-First Search",Medium,65,30,12,5
-Step 15,Graphs,Connected Components in Undirected Graph,Graph Components,"Graph, Breadth-First Search, Depth-First Search",Easy,72,20,8,3
-Step 15,Graphs,Rotten Oranges,BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,53,35,15,6
-Step 15,Graphs,Flood Fill Algorithm,DFS/BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Easy,62,20,8,3
-Step 15,Graphs,Cycle Detection in Undirected Graph (BFS),Cycle Detection,"Tree, Binary Tree, Breadth-First Search",Medium,52,35,15,6
-Step 15,Graphs,Cycle Detection in Undirected Graph (DFS),Cycle Detection,"Graph, Breadth-First Search, Depth-First Search",Medium,53,35,15,6
-Step 15,Graphs,0/1 Matrix (Distance of Nearest Cell Having 1),BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,47,35,15,6
-Step 15,Graphs,Surrounded Regions (Replace O's with X's),DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,38,40,18,7
-Step 15,Graphs,Number of Enclaves,DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,67,35,15,6
-Step 15,Graphs,Number of Distinct Islands,DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
-Step 15,Graphs,Check for Bipartite Graph (BFS / DFS),Graph Medium,"Tree, Binary Tree, Breadth-First Search",Medium,54,40,18,7
-Step 15,Graphs,Cycle Detection in Directed Graph (DFS),Cycle Detection,"Graph, Breadth-First Search, Depth-First Search",Medium,48,40,18,7
-Step 15,Graphs,Topological Sort (DFS),Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,68,30,12,5
-Step 15,Graphs,Kahn's Algorithm (Topological Sort BFS),Topo Sort,"Tree, Binary Tree, Breadth-First Search",Medium,70,30,12,5
-Step 15,Graphs,Cycle Detection in Directed Graph (Kahn's Algo),Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,49,35,15,6
-Step 15,Graphs,Course Schedule I & II,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,48,40,18,7
-Step 15,Graphs,Find Eventual Safe States,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
-Step 15,Graphs,Alien Dictionary,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Hard,36,75,35,14
-Step 15,Graphs,Shortest Path in Directed Acyclic Graph (DAG),Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,71,35,15,6
-Step 15,Graphs,Shortest Path in Undirected Graph with Unit Weights,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,65,30,12,5
-Step 15,Graphs,Dijkstra's Algorithm (Priority Queue / Set),Shortest Path,"Graph, Heap (Priority Queue), Shortest Path, Graph Theory",Medium,53,45,20,8
-Step 15,Graphs,Shortest Path in Binary Maze,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,48,35,15,6
-Step 15,Graphs,Path With Minimum Effort,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,57,45,20,8
-Step 15,Graphs,Cheapest Flights Within K Stops,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,38,50,22,9
-Step 15,Graphs,Network Delay Time,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,53,40,18,7
-Step 15,Graphs,Number of Ways to Arrive at Destination,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,50,45,20,8
-Step 15,Graphs,Bellman Ford Algorithm,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,52,40,18,7
-Step 15,Graphs,Floyd Warshall Algorithm,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,62,40,18,7
-Step 15,Graphs,Find City With Smallest Number of Neighbors,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,61,40,18,7
-Step 15,Graphs,Prim's Algorithm - Minimum Spanning Tree,MST,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
-Step 15,Graphs,Disjoint Set Data Structure (Union by Rank & Size),Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,72,35,15,6
-Step 15,Graphs,Kruskal's Algorithm - MST,MST,"Graph, Breadth-First Search, Depth-First Search",Medium,62,40,18,7
-Step 15,Graphs,Number of Operations to Make Network Connected,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,61,35,15,6
-Step 15,Graphs,Most Stones Removed with Same Row or Column,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,58,45,20,8
-Step 15,Graphs,Accounts Merge,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,56,50,22,9
-Step 15,Graphs,Number of Islands II (Online Queries),Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Hard,50,65,28,11
-Step 15,Graphs,Making a Large Island,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Hard,45,65,28,11
-Step 15,Graphs,Swim in Rising Water,Graph Hard,"Graph, Breadth-First Search, Depth-First Search",Hard,60,60,25,10
-Step 15,Graphs,Strongly Connected Components - Kosaraju's Algo,SCC,"Graph, Breadth-First Search, Depth-First Search",Hard,65,55,24,9
-Step 15,Graphs,Bridges in Graph - Tarjan's Algorithm,Bridges/AP,"Graph, Breadth-First Search, Depth-First Search",Hard,54,65,28,11
-Step 15,Graphs,Articulation Points in Graph,Bridges/AP,"Graph, Breadth-First Search, Depth-First Search",Hard,50,65,28,11
-Step 16,Dynamic Programming,Introduction to DP & Memoization vs Tabulation,DP Basics,Dynamic Programming,Easy,80,15,5,2
-Step 16,Dynamic Programming,Climbing Stairs,1D DP,"Math, Dynamic Programming, Memoization",Easy,52,20,6,3
-Step 16,Dynamic Programming,Frog Jump (DP 3),1D DP,Dynamic Programming,Easy,65,20,8,3
-Step 16,Dynamic Programming,Frog Jump with K Distances (DP 4),1D DP,Dynamic Programming,Medium,60,25,10,4
-Step 16,Dynamic Programming,Maximum Sum of Non-Adjacent Elements (House Robber),1D DP,"Array, Dynamic Programming",Medium,50,30,12,5
-Step 16,Dynamic Programming,House Robber II,1D DP,"Array, Dynamic Programming",Medium,41,30,12,5
-Step 16,Dynamic Programming,Ninja's Training (2D DP),2D Grid DP,Dynamic Programming,Medium,55,35,15,6
-Step 16,Dynamic Programming,Grid Unique Paths,2D Grid DP,Dynamic Programming,Medium,62,30,12,5
-Step 16,Dynamic Programming,Grid Unique Paths II (Obstacles),2D Grid DP,Dynamic Programming,Medium,40,35,15,6
-Step 16,Dynamic Programming,Minimum Path Sum in Grid,2D Grid DP,Dynamic Programming,Medium,62,35,15,6
-Step 16,Dynamic Programming,Triangle Path Sum,2D Grid DP,Dynamic Programming,Medium,55,35,15,6
-Step 16,Dynamic Programming,Minimum / Maximum Falling Path Sum,2D Grid DP,Dynamic Programming,Medium,68,35,15,6
-Step 16,Dynamic Programming,3D DP: Ninja and His Friends (Chocolates Pickup),3D DP,Dynamic Programming,Hard,48,60,25,10
-Step 16,Dynamic Programming,Subset Sum Equal to Target,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,42,40,18,7
-Step 16,Dynamic Programming,Partition Equal Subset Sum,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,46,40,18,7
-Step 16,Dynamic Programming,Partition Array into Two Subsets with Min Sum Diff,Subsequence DP,"Array, Backtracking, Bit Manipulation",Hard,32,65,28,11
-Step 16,Dynamic Programming,Count Subsets with Sum K,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,38,40,18,7
-Step 16,Dynamic Programming,Count Partitions with Given Difference,Subsequence DP,Dynamic Programming,Medium,45,40,18,7
-Step 16,Dynamic Programming,0/1 Knapsack Problem,Subsequence DP,Dynamic Programming,Medium,55,50,22,8
-Step 16,Dynamic Programming,Minimum Coins / Coin Change I,Subsequence DP,"Array, Dynamic Programming, Breadth-First Search",Medium,42,40,18,7
-Step 16,Dynamic Programming,Target Sum,Subsequence DP,Dynamic Programming,Medium,46,40,18,7
-Step 16,Dynamic Programming,Coin Change II (Ways to make change),Subsequence DP,"Array, Dynamic Programming, Breadth-First Search",Medium,62,35,15,6
-Step 16,Dynamic Programming,Unbounded Knapsack,Subsequence DP,Dynamic Programming,Medium,65,35,15,6
-Step 16,Dynamic Programming,Rod Cutting Problem,Subsequence DP,Dynamic Programming,Medium,68,35,15,6
-Step 16,Dynamic Programming,Longest Common Subsequence (LCS),String DP,Dynamic Programming,Medium,58,45,20,8
-Step 16,Dynamic Programming,Print Longest Common Subsequence,String DP,Dynamic Programming,Medium,55,45,20,8
-Step 16,Dynamic Programming,Longest Common Substring,String DP,Dynamic Programming,Medium,52,35,15,6
-Step 16,Dynamic Programming,Longest Palindromic Subsequence,String DP,"String, Dynamic Programming",Medium,62,35,15,6
-Step 16,Dynamic Programming,Minimum Insertions to Make String Palindrome,String DP,Dynamic Programming,Medium,68,35,15,6
-Step 16,Dynamic Programming,Minimum Insertions / Deletions to Convert String A to B,String DP,Dynamic Programming,Medium,60,35,15,6
-Step 16,Dynamic Programming,Shortest Common Supersequence,String DP,Dynamic Programming,Hard,58,60,25,10
-Step 16,Dynamic Programming,Distinct Subsequences,String DP,Dynamic Programming,Hard,45,60,25,10
-Step 16,Dynamic Programming,Edit Distance,String DP,"String, Dynamic Programming",Hard,55,60,25,10
-Step 16,Dynamic Programming,Wildcard Matching,String DP,"String, Dynamic Programming, Greediness, Recursion",Hard,27,70,30,12
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock I,Stocks DP,Dynamic Programming,Easy,54,20,8,3
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock II,Stocks DP,Dynamic Programming,Medium,65,25,10,4
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock III (Max 2 transactions),Stocks DP,Dynamic Programming,Hard,42,60,25,10
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock IV (K transactions),Stocks DP,Dynamic Programming,Hard,41,65,28,11
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock with Cooldown,Stocks DP,Dynamic Programming,Medium,56,45,20,8
-Step 16,Dynamic Programming,Best Time to Buy and Sell Stock with Transaction Fee,Stocks DP,Dynamic Programming,Medium,66,35,15,6
-Step 16,Dynamic Programming,Longest Increasing Subsequence (LIS),LIS DP,"Array, Binary Search, Dynamic Programming",Medium,54,50,22,9
-Step 16,Dynamic Programming,Print Longest Increasing Subsequence,LIS DP,"Array, Binary Search, Dynamic Programming",Medium,50,45,20,8
-Step 16,Dynamic Programming,Longest Increasing Subsequence using Binary Search,LIS DP,"Array, Binary Search, Dynamic Programming",Hard,60,40,18,7
-Step 16,Dynamic Programming,Largest Divisible Subset,LIS DP,"Array, Backtracking, Bit Manipulation",Medium,41,45,20,8
-Step 16,Dynamic Programming,Longest String Chain,LIS DP,Dynamic Programming,Medium,60,45,20,8
-Step 16,Dynamic Programming,Longest Bitonic Subsequence,LIS DP,Dynamic Programming,Medium,52,45,20,8
-Step 16,Dynamic Programming,Number of Longest Increasing Subsequences,LIS DP,"Array, Binary Search, Dynamic Programming",Medium,43,50,22,9
-Step 16,Dynamic Programming,Matrix Chain Multiplication (MCM) Partition DP,MCM DP,Dynamic Programming,Hard,52,60,25,10
-Step 16,Dynamic Programming,Mining Diamonds / Burst Balloons,MCM DP,Dynamic Programming,Hard,52,65,28,11
-Step 16,Dynamic Programming,Evaluate Boolean Expression to True,MCM DP,Dynamic Programming,Hard,48,70,30,12
-Step 16,Dynamic Programming,Palindromic Partitioning II,MCM DP,Dynamic Programming,Hard,33,65,28,11
-Step 16,Dynamic Programming,Partition Array for Maximum Sum,MCM DP,Dynamic Programming,Medium,72,40,18,7
-Step 16,Dynamic Programming,Maximum Rectangle Area with All 1s (DP),DP on Grids,Dynamic Programming,Hard,46,60,25,10
-Step 16,Dynamic Programming,Count Square Submatrices with All 1s,DP on Grids,Dynamic Programming,Medium,74,35,15,6
-Step 17,Tries,"Implement Trie I (Prefix Tree - Insert, Search, StartsWith)",Trie,"Design, Trie, Hash Table, String",Medium,64,40,18,7
-Step 17,Tries,"Implement Trie II (Count Words Equal To, Count Words Starting With)",Trie,"Design, Trie, Hash Table, String",Medium,58,45,20,8
-Step 17,Tries,Longest Word with All Prefixes,Trie,"Trie, Design, String",Medium,52,40,18,7
-Step 17,Tries,Number of Distinct Substrings in a String,Trie,"Trie, Design, String",Medium,60,45,20,8
-Step 17,Tries,Bit Manipulation using Trie - Max XOR of Two Numbers,Trie / Bit,"Trie, Design, String",Hard,56,60,25,10
-Step 17,Tries,Maximum XOR With an Element From Array (Queries),Trie / Bit,"Trie, Design, String",Hard,48,70,30,12
-Step 18,Advanced Strings,Z-Algorithm for Pattern Searching,String Algo,"String, String Matching",Hard,42,65,28,11
-Step 18,Advanced Strings,KMP Algorithm / Knuth-Morris-Pratt (Prefix Function),String Algo,"String, String Matching",Hard,45,65,28,11
-Step 18,Advanced Strings,Rabin-Karp Algorithm for Pattern Matching,String Algo,"String, String Matching",Hard,38,75,35,12
-Step 18,Advanced Strings,Shortest Palindrome using KMP,String Algo,"String, String Matching",Hard,32,75,32,13
-Step 18,Advanced Strings,Repeated String Match,String Algo,"String, Hash Table",Medium,35,40,18,7
+Step,Category,Problem Name,Problem Link,Primary Topic,LeetCode Topics,Difficulty,Acceptance Rate (%),Time (Beginner) [min],Time (Medium) [min],Time (Expert) [min]
+Step 1,Learn the Basics,User Input / Output in C++ / Java / Python,https://www.geeksforgeeks.org/c-input-output/,Basic I/O,"Math, Number Theory",Easy,85,10,3,1
+Step 1,Learn the Basics,Data Types,https://www.geeksforgeeks.org/c-data-types/,Basics,"Math, Number Theory",Easy,82,10,3,1
+Step 1,Learn the Basics,If Else Statements,https://www.geeksforgeeks.org/decision-making-in-c-c-if-else-nested-if-etc/,Control Flow,"Math, Number Theory",Easy,88,10,3,1
+Step 1,Learn the Basics,Switch Statement,https://www.geeksforgeeks.org/switch-statement-in-c/,Control Flow,"Math, Number Theory",Easy,85,10,3,1
+Step 1,Learn the Basics,For Loops & While Loops,https://www.geeksforgeeks.org/loops-in-c/,Loops,"Math, Number Theory",Easy,80,12,4,2
+Step 1,Learn the Basics,Functions (Pass by Value and Reference),https://www.geeksforgeeks.org/pass-by-value-vs-pass-by-reference-in-c/,Functions,"Math, Number Theory",Easy,78,12,4,2
+Step 1,Learn the Basics,Time and Space Complexity,https://www.geeksforgeeks.org/time-complexity-and-space-complexity/,Theory,"Math, Number Theory",Easy,75,15,5,2
+Step 1,Learn the Basics,Pattern 1 to 22 (Star & Number Patterns),https://www.geeksforgeeks.org/programs-for-printing-pyramid-patterns-in-c/,Patterns,"Math, Number Theory",Easy,70,20,8,3
+Step 1,Learn the Basics,Count Digits,https://www.geeksforgeeks.org/problems/count-digits5716/1,Basic Math,"Math, Number Theory",Easy,78,10,3,2
+Step 1,Learn the Basics,Reverse Digits of a Number,https://leetcode.com/problems/reverse-integer/,Basic Math,"Math, Number Theory",Easy,62,15,5,3
+Step 1,Learn the Basics,Check Palindrome Number,https://leetcode.com/problems/palindrome-number/,Basic Math,"Math, Number Theory",Easy,68,15,5,2
+Step 1,Learn the Basics,GCD or HCF,https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1,Basic Math,"Math, Number Theory",Easy,65,15,5,2
+Step 1,Learn the Basics,Armstrong Numbers,https://www.geeksforgeeks.org/problems/armstrong-numbers2827/1,Basic Math,"Math, Number Theory",Easy,64,15,5,2
+Step 1,Learn the Basics,Print all Divisors,https://www.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1,Basic Math,"Math, Number Theory",Easy,58,20,7,3
+Step 1,Learn the Basics,Check for Prime,https://www.geeksforgeeks.org/problems/prime-number2314/1,Basic Math,"Math, Number Theory",Easy,55,15,5,3
+Step 1,Learn the Basics,Understand Recursion by Print N times,https://www.geeksforgeeks.org/problems/print-gfg-1-to-n/1,Recursion,"Math, Number Theory",Easy,75,15,5,2
+Step 1,Learn the Basics,Print 1 to N using Recursion,https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115621/1,Recursion,"Math, Number Theory",Easy,74,15,5,2
+Step 1,Learn the Basics,Print N to 1 using Recursion,https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1,Recursion,"Math, Number Theory",Easy,74,15,5,2
+Step 1,Learn the Basics,Sum of First N Numbers,https://www.geeksforgeeks.org/problems/sum-of-first-n-terms5818/1,Recursion,"Math, Number Theory",Easy,72,15,5,2
+Step 1,Learn the Basics,Factorial of N Numbers,https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/1,Recursion,"Math, Number Theory",Easy,71,15,5,2
+Step 1,Learn the Basics,Reverse an Array using Recursion,https://leetcode.com/problems/reverse-string/,Recursion,"Math, Number Theory",Easy,68,20,7,3
+Step 1,Learn the Basics,Check if String is Palindrome (Recursion),https://leetcode.com/problems/valid-palindrome/,Recursion,"Math, Number Theory",Easy,66,20,7,3
+Step 1,Learn the Basics,Fibonacci Number (Recursive),https://leetcode.com/problems/fibonacci-number/,Recursion,"Math, Number Theory",Easy,67,20,7,3
+Step 1,Learn the Basics,Count Frequencies of Array Elements,https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1,Hashing,"Math, Number Theory",Easy,62,20,8,3
+Step 1,Learn the Basics,Find Highest / Lowest Frequency Element,https://leetcode.com/problems/top-k-frequent-elements/,Hashing,"Math, Number Theory",Easy,60,20,8,3
+Step 1,Learn the Basics,C++ STL / Java Collections Overview,https://www.geeksforgeeks.org/cpp-stl-tutorial/,STL/Collections,"Math, Number Theory",Easy,80,25,10,4
+Step 2,Sorting Techniques,Selection Sort,https://www.geeksforgeeks.org/problems/selection-sort/1,Sorting,"Algorithms, Data Structures",Easy,72,20,8,3
+Step 2,Sorting Techniques,Bubble Sort,https://www.geeksforgeeks.org/problems/bubble-sort/1,Sorting,"Algorithms, Data Structures",Easy,70,20,8,3
+Step 2,Sorting Techniques,Insertion Sort,https://www.geeksforgeeks.org/problems/insertion-sort/1,Sorting,"Algorithms, Data Structures",Easy,68,20,8,3
+Step 2,Sorting Techniques,Merge Sort,https://leetcode.com/problems/sort-an-array/,Divide & Conquer,"Array, Sorting, Divide and Conquer",Medium,64,35,12,5
+Step 2,Sorting Techniques,Recursive Bubble Sort,https://www.geeksforgeeks.org/problems/bubble-sort/1,Sorting,"Algorithms, Data Structures",Easy,62,25,10,4
+Step 2,Sorting Techniques,Recursive Insertion Sort,https://www.geeksforgeeks.org/problems/insertion-sort/1,Sorting,"Algorithms, Data Structures",Easy,60,25,10,4
+Step 2,Sorting Techniques,Quick Sort,https://leetcode.com/problems/sort-an-array/,Divide & Conquer,"Array, Sorting, Divide and Conquer",Medium,58,35,12,5
+Step 3,Arrays,Largest Element in an Array,https://www.geeksforgeeks.org/problems/largest-element-in-array2855/1,Arrays Easy,"Array, Sorting, Two Pointers",Easy,82,10,4,2
+Step 3,Arrays,Second Largest Element without Sorting,https://www.geeksforgeeks.org/problems/second-largest3735/1,Arrays Easy,"Array, Sorting, Two Pointers",Easy,68,15,5,3
+Step 3,Arrays,Check if Array is Sorted,https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,75,12,4,2
+Step 3,Arrays,Remove Duplicates from Sorted Array,https://leetcode.com/problems/remove-duplicates-from-sorted-array/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,55,15,6,2
+Step 3,Arrays,Left Rotate Array by One Place,https://leetcode.com/problems/rotate-array/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,74,12,5,2
+Step 3,Arrays,Left Rotate Array by K Places,https://leetcode.com/problems/rotate-array/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,65,20,7,3
+Step 3,Arrays,Move Zeros to End,https://leetcode.com/problems/move-zeroes/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,61,20,7,3
+Step 3,Arrays,Linear Search,https://www.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1,Arrays Easy,"Array, Sorting, Two Pointers",Easy,85,10,3,1
+Step 3,Arrays,Find Union and Intersection of Two Sorted Arrays,https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1,Arrays Easy,"Array, Sorting, Two Pointers",Easy,52,25,10,4
+Step 3,Arrays,Find Missing Number in Array,https://leetcode.com/problems/missing-number/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,63,20,7,3
+Step 3,Arrays,Maximum Consecutive Ones,https://leetcode.com/problems/max-consecutive-ones/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,57,18,6,2
+Step 3,Arrays,Find Element Appearing Once (Others Twice),https://leetcode.com/problems/single-number/,Arrays Easy,"Array, Sorting, Two Pointers",Easy,70,20,7,3
+Step 3,Arrays,Longest Subarray with Sum K (Positives),https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1,Arrays Easy,"Array, Sorting, Two Pointers",Easy,48,30,12,5
+Step 3,Arrays,Longest Subarray with Sum K (Positives + Negatives),https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1,Arrays Medium,"Array, Sorting, Two Pointers",Medium,38,40,15,6
+Step 3,Arrays,Two Sum Problem,https://leetcode.com/problems/two-sum/,Arrays Medium,"Array, Hash Table",Easy,52,20,8,4
+Step 3,Arrays,"Sort an Array of 0s, 1s and 2s (Dutch National Flag)",https://leetcode.com/problems/sort-colors/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,62,25,10,4
+Step 3,Arrays,Majority Element (> N/2 times),https://leetcode.com/problems/majority-element/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,63,30,10,5
+Step 3,Arrays,Kadane's Algorithm - Maximum Subarray Sum,https://leetcode.com/problems/kadanes-algorithm---maximum-subarray-sum/,Arrays Medium,"Array, Dynamic Programming, Divide and Conquer",Medium,51,40,15,7
+Step 3,Arrays,Print Subarray with Maximum Subarray Sum,https://leetcode.com/problems/print-subarray-with-maximum-subarray-sum/,Arrays Medium,"Array, Dynamic Programming, Divide and Conquer",Medium,48,35,14,6
+Step 3,Arrays,Stock Buy and Sell,https://leetcode.com/problems/stock-buy-and-sell/,Arrays Medium,"Array, Sorting, Two Pointers",Easy,54,20,8,3
+Step 3,Arrays,Rearrange Array Elements by Sign,https://leetcode.com/problems/rearrange-array-elements-by-sign/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,71,30,12,5
+Step 3,Arrays,Next Permutation,https://leetcode.com/problems/next-permutation/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,38,45,18,7
+Step 3,Arrays,Leaders in an Array,https://leetcode.com/problems/leaders-in-an-array/,Arrays Medium,"Array, Sorting, Two Pointers",Easy,66,20,8,3
+Step 3,Arrays,Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,49,35,15,6
+Step 3,Arrays,Set Matrix Zeroes,https://leetcode.com/problems/set-matrix-zeroes/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,54,40,15,6
+Step 3,Arrays,Rotate Matrix / Image by 90 Degrees,https://leetcode.com/problems/rotate-matrix-image-by-90-degrees/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,72,35,12,5
+Step 3,Arrays,Spiral Traversal of Matrix,https://leetcode.com/problems/spiral-traversal-of-matrix/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,49,40,15,6
+Step 3,Arrays,Count Subarrays with Given Sum,https://leetcode.com/problems/count-subarrays-with-given-sum/,Arrays Medium,"Array, Sorting, Two Pointers",Medium,44,35,14,6
+Step 3,Arrays,Pascal's Triangle,https://leetcode.com/problems/pascals-triangle/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,70,30,12,5
+Step 3,Arrays,Majority Element (> N/3 times),https://leetcode.com/problems/majority-element-n3-times/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,50,40,15,6
+Step 3,Arrays,3-Sum Problem,https://leetcode.com/problems/3-sum-problem/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,34,45,20,8
+Step 3,Arrays,4-Sum Problem,https://leetcode.com/problems/4-sum-problem/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,36,50,22,8
+Step 3,Arrays,Largest Subarray with 0 Sum,https://leetcode.com/problems/largest-subarray-with-0-sum/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,46,35,15,6
+Step 3,Arrays,Count Subarrays with Given XOR K,https://leetcode.com/problems/count-subarrays-with-given-xor-k/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,58,40,18,7
+Step 3,Arrays,Merge Overlapping Subintervals,https://leetcode.com/problems/merge-overlapping-subintervals/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,47,40,18,7
+Step 3,Arrays,Merge Two Sorted Arrays Without Extra Space,https://leetcode.com/problems/merge-two-sorted-arrays-without-extra-space/,Arrays Hard,"Array, Sorting, Two Pointers",Hard,42,50,22,9
+Step 3,Arrays,Find Repeating and Missing Number,https://leetcode.com/problems/find-repeating-and-missing-number/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,40,40,18,7
+Step 3,Arrays,Count Inversions in Array,https://leetcode.com/problems/count-inversions-in-array/,Arrays Hard,"Array, Sorting, Two Pointers",Hard,40,60,25,10
+Step 3,Arrays,Reverse Pairs,https://leetcode.com/problems/reverse-pairs/,Arrays Hard,"Array, Sorting, Two Pointers",Hard,31,65,28,11
+Step 3,Arrays,Maximum Product Subarray,https://leetcode.com/problems/maximum-product-subarray/,Arrays Hard,"Array, Sorting, Two Pointers",Medium,35,45,18,7
+Step 4,Binary Search,Binary Search to find X in sorted array,https://leetcode.com/problems/binary-search-to-find-x-in-sorted-array/,BS 1D,"Array, Binary Search",Easy,56,15,5,3
+Step 4,Binary Search,Implement Lower Bound,https://leetcode.com/problems/implement-lower-bound/,BS 1D,"Array, Binary Search",Easy,60,20,7,3
+Step 4,Binary Search,Implement Upper Bound,https://leetcode.com/problems/implement-upper-bound/,BS 1D,"Array, Binary Search",Easy,58,20,7,3
+Step 4,Binary Search,Search Insert Position,https://leetcode.com/problems/search-insert-position/,BS 1D,"Array, Binary Search",Easy,46,20,7,3
+Step 4,Binary Search,Floor / Ceil in Sorted Array,https://leetcode.com/problems/floor-ceil-in-sorted-array/,BS 1D,"Array, Binary Search",Easy,54,20,8,3
+Step 4,Binary Search,First and Last Occurrence in Array,https://leetcode.com/problems/first-and-last-occurrence-in-array/,BS 1D,"Array, Binary Search",Medium,42,25,10,4
+Step 4,Binary Search,Count Occurrences in Sorted Array,https://leetcode.com/problems/count-occurrences-in-sorted-array/,BS 1D,"Array, Binary Search",Medium,58,25,10,4
+Step 4,Binary Search,Search in Rotated Sorted Array I,https://leetcode.com/problems/search-in-rotated-sorted-array-i/,BS 1D,"Array, Binary Search",Medium,40,40,15,6
+Step 4,Binary Search,Search in Rotated Sorted Array II (Duplicates),https://leetcode.com/problems/search-in-rotated-sorted-array-ii-duplicates/,BS 1D,"Array, Binary Search",Medium,36,45,18,7
+Step 4,Binary Search,Find Minimum in Rotated Sorted Array,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/,BS 1D,"Array, Binary Search",Medium,52,35,14,5
+Step 4,Binary Search,Find out how many times array is rotated,https://leetcode.com/problems/find-out-how-many-times-array-is-rotated/,BS 1D,"Array, Binary Search",Medium,50,30,12,5
+Step 4,Binary Search,Single Element in Sorted Array,https://leetcode.com/problems/single-element-in-sorted-array/,BS 1D,"Array, Binary Search",Medium,59,35,15,6
+Step 4,Binary Search,Find Peak Element,https://leetcode.com/problems/find-peak-element/,BS 1D,"Array, Binary Search",Medium,47,35,15,6
+Step 4,Binary Search,Find Square Root of N using Binary Search,https://leetcode.com/problems/find-square-root-of-n-using-binary-search/,BS Answers,"Array, Binary Search",Easy,45,25,10,4
+Step 4,Binary Search,Find Nth Root of M,https://leetcode.com/problems/find-nth-root-of-m/,BS Answers,"Array, Binary Search",Medium,42,30,12,5
+Step 4,Binary Search,Koko Eating Bananas,https://leetcode.com/problems/koko-eating-bananas/,BS Answers,"Array, Binary Search",Medium,51,45,18,7
+Step 4,Binary Search,Minimum days to make M bouquets,https://leetcode.com/problems/minimum-days-to-make-m-bouquets/,BS Answers,"Array, Binary Search",Medium,54,45,18,7
+Step 4,Binary Search,Find the Smallest Divisor Given a Threshold,https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/,BS Answers,"Array, Binary Search",Medium,57,45,18,7
+Step 4,Binary Search,Capacity to Ship Packages Within D Days,https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/,BS Answers,"Array, Binary Search",Medium,68,45,18,7
+Step 4,Binary Search,Kth Missing Positive Number,https://leetcode.com/problems/kth-missing-positive-number/,BS Answers,"Array, Binary Search",Easy,60,30,12,5
+Step 4,Binary Search,Aggressive Cows,https://leetcode.com/problems/aggressive-cows/,BS Answers,"Array, Binary Search",Hard,35,70,35,12
+Step 4,Binary Search,Book Allocation Problem,https://leetcode.com/problems/book-allocation-problem/,BS Answers,"Array, Binary Search",Hard,38,70,30,12
+Step 4,Binary Search,Split Array - Largest Sum,https://leetcode.com/problems/split-array---largest-sum/,BS Answers,"Array, Binary Search",Hard,54,65,28,11
+Step 4,Binary Search,Painter's Partition Problem,https://leetcode.com/problems/painters-partition-problem/,BS Answers,"Array, Binary Search",Hard,48,65,28,11
+Step 4,Binary Search,Minimize Max Distance to Gas Station,https://leetcode.com/problems/minimize-max-distance-to-gas-station/,BS Answers,"Array, Binary Search",Hard,38,80,35,14
+Step 4,Binary Search,Median of 2 Sorted Arrays,https://leetcode.com/problems/median-of-2-sorted-arrays/,BS Answers,"Array, Binary Search, Divide and Conquer",Hard,38,75,32,13
+Step 4,Binary Search,K-th Element of Two Sorted Arrays,https://leetcode.com/problems/k-th-element-of-two-sorted-arrays/,BS Answers,"Array, Binary Search",Medium,50,50,22,9
+Step 4,Binary Search,Search in 2D Matrix I,https://leetcode.com/problems/search-in-2d-matrix-i/,BS 2D,"Array, Binary Search",Medium,49,35,14,5
+Step 4,Binary Search,Search in 2D Matrix II,https://leetcode.com/problems/search-in-2d-matrix-ii/,BS 2D,"Array, Binary Search",Medium,51,35,14,5
+Step 4,Binary Search,Find Peak Element II (2D),https://leetcode.com/problems/find-peak-element-ii-2d/,BS 2D,"Array, Binary Search",Hard,37,60,25,10
+Step 4,Binary Search,Matrix Median,https://leetcode.com/problems/matrix-median/,BS 2D,"Array, Binary Search",Hard,42,65,28,11
+Step 4,Binary Search,Find Row with Maximum 1s,https://leetcode.com/problems/find-row-with-maximum-1s/,BS 2D,"Array, Binary Search",Easy,62,25,10,4
+Step 5,Strings,Remove Outer Parentheses,https://leetcode.com/problems/remove-outer-parentheses/,Strings Basic,"String, Hash Table",Easy,81,15,5,2
+Step 5,Strings,Reverse Words in a String,https://leetcode.com/problems/reverse-words-in-a-string/,Strings Basic,"String, Hash Table",Medium,44,25,10,4
+Step 5,Strings,Largest Odd Number in String,https://leetcode.com/problems/largest-odd-number-in-string/,Strings Basic,"String, Hash Table",Easy,64,15,5,2
+Step 5,Strings,Longest Common Prefix,https://leetcode.com/problems/longest-common-prefix/,Strings Basic,"String, Hash Table",Easy,42,20,8,3
+Step 5,Strings,Isomorphic Strings,https://leetcode.com/problems/isomorphic-strings/,Strings Basic,"String, Hash Table",Easy,43,20,8,3
+Step 5,Strings,Check if One String is Rotation of Another,https://leetcode.com/problems/check-if-one-string-is-rotation-of-another/,Strings Basic,"String, Hash Table",Easy,45,20,8,3
+Step 5,Strings,Check for Anagrams,https://leetcode.com/problems/check-for-anagrams/,Strings Basic,"String, Hash Table",Easy,63,15,6,2
+Step 5,Strings,Sort Characters by Frequency,https://leetcode.com/problems/sort-characters-by-frequency/,Strings Medium,"String, Hash Table",Medium,70,25,10,4
+Step 5,Strings,Maximum Nesting Depth of Parentheses,https://leetcode.com/problems/maximum-nesting-depth-of-parentheses/,Strings Medium,"String, Hash Table",Easy,82,15,5,2
+Step 5,Strings,Roman to Integer,https://leetcode.com/problems/roman-to-integer/,Strings Medium,"String, Hash Table",Easy,61,20,7,3
+Step 5,Strings,Integer to Roman,https://leetcode.com/problems/integer-to-roman/,Strings Medium,"String, Hash Table",Medium,63,30,12,5
+Step 5,Strings,String to Integer (atoi),https://leetcode.com/problems/string-to-integer-atoi/,Strings Medium,"String, Hash Table",Medium,17,45,18,7
+Step 5,Strings,Count Number of Substrings with K Distinct Chars,https://leetcode.com/problems/count-number-of-substrings-with-k-distinct-chars/,Strings Medium,"String, Hash Table",Medium,40,40,18,7
+Step 5,Strings,Longest Palindromic Substring,https://leetcode.com/problems/longest-palindromic-substring/,Strings Medium,"String, Dynamic Programming",Medium,34,50,22,9
+Step 5,Strings,Sum of Beauty of All Substrings,https://leetcode.com/problems/sum-of-beauty-of-all-substrings/,Strings Medium,"String, Hash Table",Medium,65,40,18,7
+Step 6,Linked List,Introduction to Linked List & Node Creation,https://leetcode.com/problems/introduction-to-linked-list-node-creation/,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,80,15,5,2
+Step 6,Linked List,Insert / Delete Node in Linked List,https://leetcode.com/problems/insert-delete-node-in-linked-list/,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,75,20,7,3
+Step 6,Linked List,Length of Linked List,https://leetcode.com/problems/length-of-linked-list/,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,85,10,3,1
+Step 6,Linked List,Search an Element in Linked List,https://leetcode.com/problems/search-an-element-in-linked-list/,LL Basic,"Array, Binary Search, Dynamic Programming",Easy,82,10,4,2
+Step 6,Linked List,Introduction to Doubly Linked List,https://leetcode.com/problems/introduction-to-doubly-linked-list/,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,78,15,6,2
+Step 6,Linked List,Insert / Delete Node in Doubly Linked List,https://leetcode.com/problems/insert-delete-node-in-doubly-linked-list/,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,72,20,8,3
+Step 6,Linked List,Reverse a Doubly Linked List,https://leetcode.com/problems/reverse-a-doubly-linked-list/,DLL Basic,"Array, Binary Search, Dynamic Programming",Easy,70,20,8,3
+Step 6,Linked List,Middle of Linked List (Tortoise-Hare),https://leetcode.com/problems/middle-of-linked-list-tortoise-hare/,LL Medium,"Array, Binary Search, Dynamic Programming",Easy,76,15,5,3
+Step 6,Linked List,Reverse a Linked List (Iterative),https://leetcode.com/problems/reverse-a-linked-list-iterative/,LL Medium,"Array, Binary Search, Dynamic Programming",Easy,74,20,8,3
+Step 6,Linked List,Reverse a Linked List (Recursive),https://leetcode.com/problems/reverse-a-linked-list-recursive/,LL Medium,"Array, Binary Search, Dynamic Programming",Easy,70,20,8,3
+Step 6,Linked List,Detect a Cycle in Linked List,https://leetcode.com/problems/detect-a-cycle-in-linked-list/,LL Medium,"Linked List, Two Pointers, Hash Table",Easy,49,20,8,4
+Step 6,Linked List,Find Starting Point of Cycle in LL,https://leetcode.com/problems/find-starting-point-of-cycle-in-ll/,LL Medium,"Linked List, Two Pointers",Medium,50,30,12,5
+Step 6,Linked List,Length of Loop in Linked List,https://leetcode.com/problems/length-of-loop-in-linked-list/,LL Medium,"Array, Binary Search, Dynamic Programming",Easy,60,25,10,4
+Step 6,Linked List,Check if LL is Palindrome,https://leetcode.com/problems/check-if-ll-is-palindrome/,LL Medium,"Linked List, Two Pointers",Easy,51,30,12,5
+Step 6,Linked List,Segregate Odd and Even Nodes in LL,https://leetcode.com/problems/segregate-odd-and-even-nodes-in-ll/,LL Medium,"Linked List, Two Pointers",Medium,61,30,12,5
+Step 6,Linked List,Remove Nth Node from End of LL,https://leetcode.com/problems/remove-nth-node-from-end-of-ll/,LL Medium,"Linked List, Two Pointers",Medium,43,30,12,5
+Step 6,Linked List,Delete Middle Node of LL,https://leetcode.com/problems/delete-middle-node-of-ll/,LL Medium,"Linked List, Two Pointers",Medium,64,25,10,4
+Step 6,Linked List,Sort Linked List (Merge Sort),https://leetcode.com/problems/sort-linked-list-merge-sort/,LL Medium,"Array, Binary Search, Dynamic Programming",Medium,56,40,15,6
+Step 6,Linked List,"Sort LL of 0s, 1s and 2s",https://leetcode.com/problems/sort-ll-of-0s-1s-and-2s/,LL Medium,"Linked List, Two Pointers",Easy,68,20,8,3
+Step 6,Linked List,Find Intersection Point of Y Linked List,https://leetcode.com/problems/find-intersection-point-of-y-linked-list/,LL Medium,"Array, Binary Search, Dynamic Programming",Medium,56,35,14,5
+Step 6,Linked List,Add 1 to a Number Represented as LL,https://leetcode.com/problems/add-1-to-a-number-represented-as-ll/,LL Medium,"Linked List, Two Pointers",Medium,62,30,12,5
+Step 6,Linked List,Add Two Numbers in LL,https://leetcode.com/problems/add-two-numbers-in-ll/,LL Medium,"Linked List, Two Pointers",Medium,41,35,15,6
+Step 6,Linked List,Delete all Occurrences of Key in DLL,https://leetcode.com/problems/delete-all-occurrences-of-key-in-dll/,DLL Medium,"Linked List, Two Pointers",Medium,65,25,10,4
+Step 6,Linked List,Find Pairs with Given Sum in DLL,https://leetcode.com/problems/find-pairs-with-given-sum-in-dll/,DLL Medium,"Linked List, Two Pointers",Easy,70,20,8,3
+Step 6,Linked List,Remove Duplicates from Sorted DLL,https://leetcode.com/problems/remove-duplicates-from-sorted-dll/,DLL Medium,"Linked List, Two Pointers",Easy,72,20,8,3
+Step 6,Linked List,Reverse Nodes in k-Group,https://leetcode.com/problems/reverse-nodes-in-k-group/,LL Hard,"Linked List, Recursion",Hard,58,80,35,14
+Step 6,Linked List,Rotate a Linked List,https://leetcode.com/problems/rotate-a-linked-list/,LL Hard,"Array, Binary Search, Dynamic Programming",Medium,45,35,15,6
+Step 6,Linked List,Flattening of a Linked List,https://leetcode.com/problems/flattening-of-a-linked-list/,LL Hard,"Array, Binary Search, Dynamic Programming",Medium,56,45,20,8
+Step 6,Linked List,Clone Linked List with Random and Next Pointer,https://leetcode.com/problems/clone-linked-list-with-random-and-next-pointer/,LL Hard,"Array, Binary Search, Dynamic Programming",Hard,54,60,25,10
+Step 7,Recursion & Backtracking,Recursive Implementation of atoi(),https://leetcode.com/problems/recursive-implementation-of-atoi/,Recursion,"Recursion, Backtracking",Medium,50,30,12,5
+Step 7,Recursion & Backtracking,"Pow(x, n) - Binary Exponentiation",https://leetcode.com/problems/powx-n---binary-exponentiation/,Recursion,"Recursion, Backtracking",Medium,34,30,12,5
+Step 7,Recursion & Backtracking,Count Good Numbers,https://leetcode.com/problems/count-good-numbers/,Recursion,"Recursion, Backtracking",Medium,42,35,15,6
+Step 7,Recursion & Backtracking,Sort a Stack using Recursion,https://leetcode.com/problems/sort-a-stack-using-recursion/,Recursion,"Recursion, Backtracking",Medium,68,25,10,4
+Step 7,Recursion & Backtracking,Reverse a Stack using Recursion,https://leetcode.com/problems/reverse-a-stack-using-recursion/,Recursion,"Recursion, Backtracking",Medium,70,25,10,4
+Step 7,Recursion & Backtracking,Generate All Binary Strings without Consecutive 1s,https://leetcode.com/problems/generate-all-binary-strings-without-consecutive-1s/,Subsequences,"Recursion, Backtracking",Medium,65,25,10,4
+Step 7,Recursion & Backtracking,Generate Parentheses,https://leetcode.com/problems/generate-parentheses/,Subsequences,"Recursion, Backtracking",Medium,73,35,15,6
+Step 7,Recursion & Backtracking,Print all Subsequences / Power Set,https://leetcode.com/problems/print-all-subsequences-power-set/,Subsequences,"Recursion, Backtracking",Medium,66,30,12,5
+Step 7,Recursion & Backtracking,Subsets I (Sum of all Subsets),https://leetcode.com/problems/subsets-i-sum-of-all-subsets/,Subsequences,"Array, Backtracking, Bit Manipulation",Easy,72,25,10,4
+Step 7,Recursion & Backtracking,Subsets II (Unique Subsets),https://leetcode.com/problems/subsets-ii-unique-subsets/,Subsequences,"Array, Backtracking, Bit Manipulation",Medium,56,35,15,6
+Step 7,Recursion & Backtracking,Combination Sum I,https://leetcode.com/problems/combination-sum-i/,Backtracking,"Array, Backtracking",Medium,69,45,20,8
+Step 7,Recursion & Backtracking,Combination Sum II,https://leetcode.com/problems/combination-sum-ii/,Backtracking,"Array, Backtracking",Medium,54,45,20,8
+Step 7,Recursion & Backtracking,Combination Sum III,https://leetcode.com/problems/combination-sum-iii/,Backtracking,"Array, Backtracking",Medium,68,35,15,6
+Step 7,Recursion & Backtracking,Subset Sum I & II,https://leetcode.com/problems/subset-sum-i-ii/,Backtracking,"Array, Backtracking, Bit Manipulation",Medium,60,35,15,6
+Step 7,Recursion & Backtracking,Letter Combinations of a Phone Number,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,Backtracking,"Recursion, Backtracking",Medium,59,40,18,7
+Step 7,Recursion & Backtracking,Palindrome Partitioning,https://leetcode.com/problems/palindrome-partitioning/,Backtracking,"Recursion, Backtracking",Medium,67,45,20,8
+Step 7,Recursion & Backtracking,Word Search,https://leetcode.com/problems/word-search/,Backtracking,"Array, String, Backtracking, Matrix",Medium,41,50,22,9
+Step 7,Recursion & Backtracking,N-Queens,https://leetcode.com/problems/n-queens/,Backtracking,Backtracking,Hard,66,75,35,15
+Step 7,Recursion & Backtracking,Sudoku Solver,https://leetcode.com/problems/sudoku-solver/,Backtracking,"Array, Backtracking, Matrix",Hard,60,80,38,15
+Step 7,Recursion & Backtracking,M-Coloring Problem,https://leetcode.com/problems/m-coloring-problem/,Backtracking,"Recursion, Backtracking",Medium,55,50,22,9
+Step 7,Recursion & Backtracking,Rat in a Maze,https://leetcode.com/problems/rat-in-a-maze/,Backtracking,"Recursion, Backtracking",Medium,48,45,20,8
+Step 7,Recursion & Backtracking,Word Break - Backtracking,https://leetcode.com/problems/word-break---backtracking/,Backtracking,"Recursion, Backtracking",Hard,46,65,28,11
+Step 8,Bit Manipulation,Check if i-th bit is set or not,https://leetcode.com/problems/check-if-i-th-bit-is-set-or-not/,Bit Basics,"Bit Manipulation, Math",Easy,75,15,5,2
+Step 8,Bit Manipulation,Set / Clear / Toggle i-th bit,https://leetcode.com/problems/set-clear-toggle-i-th-bit/,Bit Basics,"Bit Manipulation, Math",Easy,78,15,5,2
+Step 8,Bit Manipulation,Check if number is Odd or Even using Bitwise,https://leetcode.com/problems/check-if-number-is-odd-or-even-using-bitwise/,Bit Basics,"Bit Manipulation, Math",Easy,88,10,3,1
+Step 8,Bit Manipulation,Check if number is Power of 2,https://leetcode.com/problems/check-if-number-is-power-of-2/,Bit Basics,"Bit Manipulation, Math",Easy,70,12,4,2
+Step 8,Bit Manipulation,Count Set Bits,https://leetcode.com/problems/count-set-bits/,Bit Basics,"Bit Manipulation, Math",Easy,70,15,5,2
+Step 8,Bit Manipulation,Set the Unset Bit,https://leetcode.com/problems/set-the-unset-bit/,Bit Basics,"Bit Manipulation, Math",Easy,80,10,4,2
+Step 8,Bit Manipulation,Swap Two Numbers without Third Variable,https://leetcode.com/problems/swap-two-numbers-without-third-variable/,Bit Basics,"Bit Manipulation, Math",Easy,85,10,3,1
+Step 8,Bit Manipulation,"Divide Two Integers without *, / operator",https://leetcode.com/problems/divide-two-integers-without-operator/,Bit Medium,"Bit Manipulation, Math",Medium,21,45,20,8
+Step 8,Bit Manipulation,Count Bits to Flip to Convert A to B,https://leetcode.com/problems/count-bits-to-flip-to-convert-a-to-b/,Bit Medium,"Bit Manipulation, Math",Easy,82,15,6,2
+Step 8,Bit Manipulation,Find the Single Number I,https://leetcode.com/problems/find-the-single-number-i/,Bit Medium,"Bit Manipulation, Math",Easy,72,15,6,2
+Step 8,Bit Manipulation,Find Subsets / Power Set using Bits,https://leetcode.com/problems/find-subsets-power-set-using-bits/,Bit Medium,"Array, Backtracking, Bit Manipulation",Medium,66,25,10,4
+Step 8,Bit Manipulation,Find Two Numbers Appearing Odd Times,https://leetcode.com/problems/find-two-numbers-appearing-odd-times/,Bit Medium,"Bit Manipulation, Math",Medium,60,30,12,5
+Step 8,Bit Manipulation,Single Number III,https://leetcode.com/problems/single-number-iii/,Bit Medium,"Bit Manipulation, Math",Medium,67,30,12,5
+Step 8,Bit Manipulation,"XOR of Numbers in Range [L, R]",https://leetcode.com/problems/xor-of-numbers-in-range-l-r/,Bit Medium,"Bit Manipulation, Math",Medium,55,25,10,4
+Step 8,Bit Manipulation,Print Prime Factors of a Number,https://leetcode.com/problems/print-prime-factors-of-a-number/,Advanced Math,"Bit Manipulation, Math",Medium,52,25,10,4
+Step 8,Bit Manipulation,Sieve of Eratosthenes,https://leetcode.com/problems/sieve-of-eratosthenes/,Advanced Math,"Bit Manipulation, Math",Medium,68,25,10,4
+Step 8,Bit Manipulation,Prime Factorization using Sieve,https://leetcode.com/problems/prime-factorization-using-sieve/,Advanced Math,"Bit Manipulation, Math",Medium,58,35,15,6
+Step 8,Bit Manipulation,"Power (x, n) - Modular Exponentiation",https://leetcode.com/problems/power-x-n---modular-exponentiation/,Advanced Math,"Bit Manipulation, Math",Medium,50,30,12,5
+Step 9,Stack & Queue,Implement Stack using Arrays,https://leetcode.com/problems/implement-stack-using-arrays/,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,80,15,5,2
+Step 9,Stack & Queue,Implement Queue using Arrays,https://leetcode.com/problems/implement-queue-using-arrays/,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,80,15,5,2
+Step 9,Stack & Queue,Implement Stack using Queue,https://leetcode.com/problems/implement-stack-using-queue/,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,62,20,8,3
+Step 9,Stack & Queue,Implement Queue using Stack,https://leetcode.com/problems/implement-queue-using-stack/,Implementation,"Stack, Queue, Design, Monotonic Stack",Easy,65,20,8,3
+Step 9,Stack & Queue,Implement Stack using Linked List,https://leetcode.com/problems/implement-stack-using-linked-list/,Implementation,"Array, Binary Search, Dynamic Programming",Easy,75,15,6,2
+Step 9,Stack & Queue,Implement Queue using Linked List,https://leetcode.com/problems/implement-queue-using-linked-list/,Implementation,"Array, Binary Search, Dynamic Programming",Easy,75,15,6,2
+Step 9,Stack & Queue,Check for Balanced Parentheses,https://leetcode.com/problems/check-for-balanced-parentheses/,Implementation,"String, Stack",Easy,68,20,7,3
+Step 9,Stack & Queue,Implement Min Stack,https://leetcode.com/problems/implement-min-stack/,Implementation,"Stack, Queue, Design, Monotonic Stack",Medium,53,30,12,5
+Step 9,Stack & Queue,Infix to Postfix Conversion,https://leetcode.com/problems/infix-to-postfix-conversion/,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,55,30,12,5
+Step 9,Stack & Queue,Prefix to Infix Conversion,https://leetcode.com/problems/prefix-to-infix-conversion/,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,60,25,10,4
+Step 9,Stack & Queue,Prefix to Postfix Conversion,https://leetcode.com/problems/prefix-to-postfix-conversion/,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,62,25,10,4
+Step 9,Stack & Queue,Postfix to Prefix Conversion,https://leetcode.com/problems/postfix-to-prefix-conversion/,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,63,25,10,4
+Step 9,Stack & Queue,Postfix to Infix Conversion,https://leetcode.com/problems/postfix-to-infix-conversion/,Prefix/Infix/Postfix,"Stack, Queue, Design, Monotonic Stack",Medium,61,25,10,4
+Step 9,Stack & Queue,Next Greater Element I,https://leetcode.com/problems/next-greater-element-i/,Monotonic Stack,"Array, Stack, Monotonic Stack, Hash Table",Medium,72,35,14,5
+Step 9,Stack & Queue,Next Greater Element II (Circular),https://leetcode.com/problems/next-greater-element-ii-circular/,Monotonic Stack,"Array, Stack, Monotonic Stack, Hash Table",Medium,63,35,15,6
+Step 9,Stack & Queue,Next Smaller Element,https://leetcode.com/problems/next-smaller-element/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,65,30,12,5
+Step 9,Stack & Queue,Number of NGEs to the Right,https://leetcode.com/problems/number-of-nges-to-the-right/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,58,30,12,5
+Step 9,Stack & Queue,Trapping Rainwater,https://leetcode.com/problems/trapping-rainwater/,Monotonic Stack,"Array, Two Pointers, Stack, Dynamic Programming, Monotonic Stack",Hard,60,75,30,12
+Step 9,Stack & Queue,Asteroid Collision,https://leetcode.com/problems/asteroid-collision/,Monotonic Stack,"Array, Binary Search, Dynamic Programming",Medium,45,35,15,6
+Step 9,Stack & Queue,Sum of Subarray Minimums,https://leetcode.com/problems/sum-of-subarray-minimums/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,35,50,22,9
+Step 9,Stack & Queue,Sum of Subarray Ranges,https://leetcode.com/problems/sum-of-subarray-ranges/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,60,45,20,8
+Step 9,Stack & Queue,Remove K Digits,https://leetcode.com/problems/remove-k-digits/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,31,40,18,7
+Step 9,Stack & Queue,Largest Rectangle in Histogram,https://leetcode.com/problems/largest-rectangle-in-histogram/,Monotonic Stack,"Array, Stack, Monotonic Stack",Hard,44,60,25,10
+Step 9,Stack & Queue,Maximal Rectangle (2D Matrix),https://leetcode.com/problems/maximal-rectangle-2d-matrix/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Hard,46,65,28,11
+Step 9,Stack & Queue,Sliding Window Maximum,https://leetcode.com/problems/sliding-window-maximum/,Monotonic Stack,"Array, Queue, Sliding Window, Heap (Priority Queue), Monotonic Queue",Hard,47,55,24,9
+Step 9,Stack & Queue,Online Stock Span,https://leetcode.com/problems/online-stock-span/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,65,30,12,5
+Step 9,Stack & Queue,Celebrity Problem,https://leetcode.com/problems/celebrity-problem/,Monotonic Stack,"Stack, Queue, Design, Monotonic Stack",Medium,42,40,18,7
+Step 9,Stack & Queue,LRU Cache,https://leetcode.com/problems/lru-cache/,Design,"Hash Table, Linked List, Design, Doubly-Linked List",Hard,42,80,35,13
+Step 9,Stack & Queue,LFU Cache,https://leetcode.com/problems/lfu-cache/,Design,"Stack, Queue, Design, Monotonic Stack",Hard,35,90,40,16
+Step 10,Sliding Window,Longest Substring Without Repeating Characters,https://leetcode.com/problems/longest-substring-without-repeating-characters/,Sliding Window,"String, Hash Table, Sliding Window",Medium,35,40,18,6
+Step 10,Sliding Window,Max Consecutive Ones III,https://leetcode.com/problems/max-consecutive-ones-iii/,Sliding Window,"Algorithms, Data Structures",Medium,63,35,15,6
+Step 10,Sliding Window,Fruit Into Baskets,https://leetcode.com/problems/fruit-into-baskets/,Sliding Window,"Algorithms, Data Structures",Medium,43,35,15,6
+Step 10,Sliding Window,Longest Repeating Character Replacement,https://leetcode.com/problems/longest-repeating-character-replacement/,Sliding Window,"Algorithms, Data Structures",Medium,54,40,18,7
+Step 10,Sliding Window,Binary Subarrays With Sum,https://leetcode.com/problems/binary-subarrays-with-sum/,Sliding Window,"Algorithms, Data Structures",Medium,60,35,15,6
+Step 10,Sliding Window,Count Number of Nice Subarrays,https://leetcode.com/problems/count-number-of-nice-subarrays/,Sliding Window,"Algorithms, Data Structures",Medium,65,35,15,6
+Step 10,Sliding Window,Subarrays with K Different Integers,https://leetcode.com/problems/subarrays-with-k-different-integers/,Sliding Window,"Algorithms, Data Structures",Hard,55,60,25,10
+Step 10,Sliding Window,Minimum Window Substring,https://leetcode.com/problems/minimum-window-substring/,Sliding Window,"String, Hash Table, Sliding Window",Hard,41,85,40,15
+Step 10,Sliding Window,Minimum Window Subsequence,https://leetcode.com/problems/minimum-window-subsequence/,Sliding Window,"Algorithms, Data Structures",Hard,42,85,40,15
+Step 10,Sliding Window,Number of Substrings Containing All Three Characters,https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/,Sliding Window,"Algorithms, Data Structures",Medium,64,35,15,6
+Step 10,Sliding Window,Maximum Points You Can Obtain from Cards,https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/,Sliding Window,"Algorithms, Data Structures",Medium,52,35,15,6
+Step 11,Heaps,Introduction to Priority Queue and Heap Implementation,https://leetcode.com/problems/introduction-to-priority-queue-and-heap-implementation/,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,75,20,8,3
+Step 11,Heaps,Min Heap and Max Heap Implementation,https://leetcode.com/problems/min-heap-and-max-heap-implementation/,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,72,25,10,4
+Step 11,Heaps,Check if Array Represents Min Heap,https://leetcode.com/problems/check-if-array-represents-min-heap/,Heap Basic,"Heap (Priority Queue), Array, Design",Easy,78,15,6,2
+Step 11,Heaps,Convert Min Heap to Max Heap,https://leetcode.com/problems/convert-min-heap-to-max-heap/,Heap Basic,"Heap (Priority Queue), Array, Design",Medium,68,20,8,3
+Step 11,Heaps,Kth Largest Element in Array,https://leetcode.com/problems/kth-largest-element-in-array/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,67,25,10,4
+Step 11,Heaps,Kth Smallest Element in Array,https://leetcode.com/problems/kth-smallest-element-in-array/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,65,25,10,4
+Step 11,Heaps,Kth Largest Element in a Stream,https://leetcode.com/problems/kth-largest-element-in-a-stream/,Heap Medium,"Heap (Priority Queue), Array, Design",Easy,55,25,10,4
+Step 11,Heaps,Merge K Sorted Arrays,https://leetcode.com/problems/merge-k-sorted-arrays/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,68,35,15,6
+Step 11,Heaps,Merge K Sorted Lists,https://leetcode.com/problems/merge-k-sorted-lists/,Heap Hard,"Array, Binary Search, Dynamic Programming",Hard,51,60,25,10
+Step 11,Heaps,Replace Elements by Rank in Array,https://leetcode.com/problems/replace-elements-by-rank-in-array/,Heap Medium,"Heap (Priority Queue), Array, Design",Easy,64,20,8,3
+Step 11,Heaps,Task Scheduler,https://leetcode.com/problems/task-scheduler/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,57,40,18,7
+Step 11,Heaps,Hands of Straights,https://leetcode.com/problems/hands-of-straights/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,56,40,18,7
+Step 11,Heaps,Design Twitter,https://leetcode.com/problems/design-twitter/,Heap Design,"Heap (Priority Queue), Array, Design",Medium,38,50,22,9
+Step 11,Heaps,Find Median from Data Stream,https://leetcode.com/problems/find-median-from-data-stream/,Heap Hard,"Heap (Priority Queue), Array, Design",Hard,51,75,32,12
+Step 11,Heaps,Top K Frequent Elements,https://leetcode.com/problems/top-k-frequent-elements/,Heap Medium,"Heap (Priority Queue), Array, Design",Medium,63,30,12,5
+Step 12,Greedy Algorithms,Assign Cookies,https://leetcode.com/problems/assign-cookies/,Greedy Easy,"Greedy, Sorting, Array",Easy,52,15,6,2
+Step 12,Greedy Algorithms,Fractional Knapsack,https://leetcode.com/problems/fractional-knapsack/,Greedy Medium,Dynamic Programming,Medium,55,30,12,5
+Step 12,Greedy Algorithms,Find Minimum Number of Coins (Greedy),https://leetcode.com/problems/find-minimum-number-of-coins-greedy/,Greedy Easy,"Greedy, Sorting, Array",Easy,60,20,8,3
+Step 12,Greedy Algorithms,Lemonade Change,https://leetcode.com/problems/lemonade-change/,Greedy Easy,"Greedy, Sorting, Array",Easy,53,15,6,2
+Step 12,Greedy Algorithms,Valid Parenthesis String,https://leetcode.com/problems/valid-parenthesis-string/,Greedy Medium,"Greedy, Sorting, Array",Medium,36,35,15,6
+Step 12,Greedy Algorithms,N Meetings in One Room,https://leetcode.com/problems/n-meetings-in-one-room/,Greedy Easy,"Greedy, Sorting, Array",Easy,45,25,10,4
+Step 12,Greedy Algorithms,Non-overlapping Intervals,https://leetcode.com/problems/non-overlapping-intervals/,Greedy Medium,"Greedy, Sorting, Array",Medium,52,35,15,6
+Step 12,Greedy Algorithms,Insert Interval,https://leetcode.com/problems/insert-interval/,Greedy Medium,"Greedy, Sorting, Array",Medium,39,35,15,6
+Step 12,Greedy Algorithms,Merge Intervals,https://leetcode.com/problems/merge-intervals/,Greedy Medium,"Greedy, Sorting, Array",Medium,47,40,18,7
+Step 12,Greedy Algorithms,Minimum Platforms Required,https://leetcode.com/problems/minimum-platforms-required/,Greedy Medium,"Greedy, Sorting, Array",Medium,48,40,18,7
+Step 12,Greedy Algorithms,Job Sequencing Problem,https://leetcode.com/problems/job-sequencing-problem/,Greedy Medium,"Greedy, Sorting, Array",Medium,46,40,18,7
+Step 12,Greedy Algorithms,Candy Distribution Problem,https://leetcode.com/problems/candy-distribution-problem/,Greedy Hard,"Greedy, Sorting, Array",Hard,42,60,25,10
+Step 12,Greedy Algorithms,Program for Shortest Job First (SJF) CPU Scheduling,https://leetcode.com/problems/program-for-shortest-job-first-sjf-cpu-scheduling/,Greedy Medium,"Greedy, Sorting, Array",Medium,70,25,10,4
+Step 12,Greedy Algorithms,LRU Page Replacement Algorithm,https://leetcode.com/problems/lru-page-replacement-algorithm/,Greedy Medium,"Greedy, Sorting, Array",Medium,65,30,12,5
+Step 13,Binary Trees,Binary Tree Inorder Traversal,https://leetcode.com/problems/binary-tree-inorder-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,75,15,5,3
+Step 13,Binary Trees,Binary Tree Preorder Traversal,https://leetcode.com/problems/binary-tree-preorder-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,74,15,5,3
+Step 13,Binary Trees,Binary Tree Postorder Traversal,https://leetcode.com/problems/binary-tree-postorder-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Easy,76,15,5,3
+Step 13,Binary Trees,Level Order Traversal / BFS,https://leetcode.com/problems/level-order-traversal-bfs/,Tree Traversal,"Tree, Binary Tree, Breadth-First Search",Medium,67,25,10,4
+Step 13,Binary Trees,Iterative Preorder Traversal,https://leetcode.com/problems/iterative-preorder-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,68,25,10,4
+Step 13,Binary Trees,Iterative Inorder Traversal,https://leetcode.com/problems/iterative-inorder-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,66,25,10,4
+Step 13,Binary Trees,Iterative Postorder Traversal (1 Stack & 2 Stacks),https://leetcode.com/problems/iterative-postorder-traversal-1-stack-2-stacks/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,58,35,15,6
+Step 13,Binary Trees,All Traversals in One Traversal,https://leetcode.com/problems/all-traversals-in-one-traversal/,Tree Traversal,"Tree, Binary Tree, Depth-First Search",Medium,62,30,12,5
+Step 13,Binary Trees,Maximum Depth / Height of Binary Tree,https://leetcode.com/problems/maximum-depth-height-of-binary-tree/,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,74,15,5,2
+Step 13,Binary Trees,Check for Balanced Binary Tree,https://leetcode.com/problems/check-for-balanced-binary-tree/,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,50,20,8,3
+Step 13,Binary Trees,Diameter of Binary Tree,https://leetcode.com/problems/diameter-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,58,30,12,5
+Step 13,Binary Trees,Maximum Path Sum in Binary Tree,https://leetcode.com/problems/maximum-path-sum-in-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Hard,39,50,22,9
+Step 13,Binary Trees,Check if Two Trees are Identical,https://leetcode.com/problems/check-if-two-trees-are-identical/,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,70,20,8,3
+Step 13,Binary Trees,Zig-Zag / Spiral Level Order Traversal,https://leetcode.com/problems/zig-zag-spiral-level-order-traversal/,Tree Medium,"Tree, Binary Tree, Breadth-First Search",Medium,57,30,12,5
+Step 13,Binary Trees,Boundary Traversal of Binary Tree,https://leetcode.com/problems/boundary-traversal-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,42,40,18,7
+Step 13,Binary Trees,Vertical Order Traversal of Binary Tree,https://leetcode.com/problems/vertical-order-traversal-of-binary-tree/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,45,55,24,9
+Step 13,Binary Trees,Top View of Binary Tree,https://leetcode.com/problems/top-view-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,44,35,15,6
+Step 13,Binary Trees,Bottom View of Binary Tree,https://leetcode.com/problems/bottom-view-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,46,35,15,6
+Step 13,Binary Trees,Right / Left View of Binary Tree,https://leetcode.com/problems/right-left-view-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,62,25,10,4
+Step 13,Binary Trees,Symmetric Binary Tree,https://leetcode.com/problems/symmetric-binary-tree/,Tree Easy,"Tree, Binary Tree, Depth-First Search",Easy,55,20,8,3
+Step 13,Binary Trees,Root to Node Path in Binary Tree,https://leetcode.com/problems/root-to-node-path-in-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,58,30,12,5
+Step 13,Binary Trees,Lowest Common Ancestor (LCA),https://leetcode.com/problems/lowest-common-ancestor-lca/,Tree Medium,"Tree, Binary Tree, Depth-First Search, Recursion",Medium,62,35,15,6
+Step 13,Binary Trees,Maximum Width of Binary Tree,https://leetcode.com/problems/maximum-width-of-binary-tree/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,42,40,18,7
+Step 13,Binary Trees,Check for Children Sum Property,https://leetcode.com/problems/check-for-children-sum-property/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,50,30,12,5
+Step 13,Binary Trees,Print All Nodes at Distance K in Binary Tree,https://leetcode.com/problems/print-all-nodes-at-distance-k-in-binary-tree/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,62,60,25,10
+Step 13,Binary Trees,Min Time Taken to Burn Binary Tree from Node,https://leetcode.com/problems/min-time-taken-to-burn-binary-tree-from-node/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,54,60,25,10
+Step 13,Binary Trees,Count Complete Tree Nodes,https://leetcode.com/problems/count-complete-tree-nodes/,Tree Medium,"Tree, Binary Tree, Depth-First Search",Medium,61,35,15,6
+Step 13,Binary Trees,Construct BT from Preorder and Inorder,https://leetcode.com/problems/construct-bt-from-preorder-and-inorder/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Medium,62,45,20,8
+Step 13,Binary Trees,Construct BT from Postorder and Inorder,https://leetcode.com/problems/construct-bt-from-postorder-and-inorder/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Medium,60,45,20,8
+Step 13,Binary Trees,Serialize and Deserialize Binary Tree,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,56,65,28,11
+Step 13,Binary Trees,Morris Inorder Traversal,https://leetcode.com/problems/morris-inorder-traversal/,Tree Hard,"Tree, Binary Tree, Depth-First Search",Hard,60,45,20,8
+Step 13,Binary Trees,Flatten Binary Tree to Linked List,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/,Tree Hard,"Array, Binary Search, Dynamic Programming",Medium,63,40,18,7
+Step 14,Binary Search Trees,Introduction to Binary Search Trees,https://leetcode.com/problems/introduction-to-binary-search-trees/,BST Basic,"Array, Binary Search",Easy,80,10,4,2
+Step 14,Binary Search Trees,Search in a Binary Search Tree,https://leetcode.com/problems/search-in-a-binary-search-tree/,BST Basic,"Array, Binary Search",Easy,78,15,5,2
+Step 14,Binary Search Trees,Find Min / Max in BST,https://leetcode.com/problems/find-min-max-in-bst/,BST Basic,"Array, Binary Search",Easy,85,10,3,1
+Step 14,Binary Search Trees,Ceil in a Binary Search Tree,https://leetcode.com/problems/ceil-in-a-binary-search-tree/,BST Basic,"Array, Binary Search",Medium,65,20,8,3
+Step 14,Binary Search Trees,Floor in a Binary Search Tree,https://leetcode.com/problems/floor-in-a-binary-search-tree/,BST Basic,"Array, Binary Search",Medium,63,20,8,3
+Step 14,Binary Search Trees,Insert a Given Node in BST,https://leetcode.com/problems/insert-a-given-node-in-bst/,BST Basic,"Array, Binary Search",Medium,50,25,10,4
+Step 14,Binary Search Trees,Delete a Node in BST,https://leetcode.com/problems/delete-a-node-in-bst/,BST Medium,"Array, Binary Search",Medium,51,40,18,7
+Step 14,Binary Search Trees,Kth Smallest / Largest Element in BST,https://leetcode.com/problems/kth-smallest-largest-element-in-bst/,BST Medium,"Array, Binary Search",Medium,70,30,12,5
+Step 14,Binary Search Trees,Validate Binary Search Tree,https://leetcode.com/problems/validate-binary-search-tree/,BST Medium,"Array, Binary Search",Medium,53,35,15,6
+Step 14,Binary Search Trees,Lowest Common Ancestor in BST,https://leetcode.com/problems/lowest-common-ancestor-in-bst/,BST Medium,"Tree, Binary Tree, Depth-First Search, Recursion",Easy,63,25,10,4
+Step 14,Binary Search Trees,Construct BST from Preorder Traversal,https://leetcode.com/problems/construct-bst-from-preorder-traversal/,BST Medium,"Array, Binary Search",Medium,66,35,15,6
+Step 14,Binary Search Trees,Inorder Successor / Predecessor in BST,https://leetcode.com/problems/inorder-successor-predecessor-in-bst/,BST Medium,"Array, Binary Search",Medium,48,30,12,5
+Step 14,Binary Search Trees,BST Iterator,https://leetcode.com/problems/bst-iterator/,BST Design,"Array, Binary Search",Medium,71,35,15,6
+Step 14,Binary Search Trees,Two Sum in BST (Check if Pair Exists),https://leetcode.com/problems/two-sum-in-bst-check-if-pair-exists/,BST Medium,"Array, Binary Search",Medium,61,30,12,5
+Step 14,Binary Search Trees,Recover BST (Correct Swapped Nodes),https://leetcode.com/problems/recover-bst-correct-swapped-nodes/,BST Hard,"Array, Binary Search",Hard,52,60,25,10
+Step 14,Binary Search Trees,Largest BST in Binary Tree,https://leetcode.com/problems/largest-bst-in-binary-tree/,BST Hard,"Array, Binary Search",Hard,40,65,28,11
+Step 15,Graphs,Graph Representation in C++ / Java (Matrix vs List),https://leetcode.com/problems/graph-representation-in-c-java-matrix-vs-list/,Graph Basic,"Array, Binary Search, Dynamic Programming",Easy,82,15,6,2
+Step 15,Graphs,BFS Traversal of Graph,https://leetcode.com/problems/bfs-traversal-of-graph/,Graph Traversal,"Tree, Binary Tree, Breadth-First Search",Medium,58,30,12,5
+Step 15,Graphs,DFS Traversal of Graph,https://leetcode.com/problems/dfs-traversal-of-graph/,Graph Traversal,"Graph, Breadth-First Search, Depth-First Search",Medium,58,30,12,5
+Step 15,Graphs,Number of Provinces,https://leetcode.com/problems/number-of-provinces/,Graph Components,"Graph, Breadth-First Search, Depth-First Search",Medium,65,30,12,5
+Step 15,Graphs,Connected Components in Undirected Graph,https://leetcode.com/problems/connected-components-in-undirected-graph/,Graph Components,"Graph, Breadth-First Search, Depth-First Search",Easy,72,20,8,3
+Step 15,Graphs,Rotten Oranges,https://leetcode.com/problems/rotten-oranges/,BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,53,35,15,6
+Step 15,Graphs,Flood Fill Algorithm,https://leetcode.com/problems/flood-fill-algorithm/,DFS/BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Easy,62,20,8,3
+Step 15,Graphs,Cycle Detection in Undirected Graph (BFS),https://leetcode.com/problems/cycle-detection-in-undirected-graph-bfs/,Cycle Detection,"Tree, Binary Tree, Breadth-First Search",Medium,52,35,15,6
+Step 15,Graphs,Cycle Detection in Undirected Graph (DFS),https://leetcode.com/problems/cycle-detection-in-undirected-graph-dfs/,Cycle Detection,"Graph, Breadth-First Search, Depth-First Search",Medium,53,35,15,6
+Step 15,Graphs,0/1 Matrix (Distance of Nearest Cell Having 1),https://leetcode.com/problems/01-matrix-distance-of-nearest-cell-having-1/,BFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,47,35,15,6
+Step 15,Graphs,Surrounded Regions (Replace O's with X's),https://leetcode.com/problems/surrounded-regions-replace-os-with-xs/,DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,38,40,18,7
+Step 15,Graphs,Number of Enclaves,https://leetcode.com/problems/number-of-enclaves/,DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,67,35,15,6
+Step 15,Graphs,Number of Distinct Islands,https://leetcode.com/problems/number-of-distinct-islands/,DFS Grid,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
+Step 15,Graphs,Check for Bipartite Graph (BFS / DFS),https://leetcode.com/problems/check-for-bipartite-graph-bfs-dfs/,Graph Medium,"Tree, Binary Tree, Breadth-First Search",Medium,54,40,18,7
+Step 15,Graphs,Cycle Detection in Directed Graph (DFS),https://leetcode.com/problems/cycle-detection-in-directed-graph-dfs/,Cycle Detection,"Graph, Breadth-First Search, Depth-First Search",Medium,48,40,18,7
+Step 15,Graphs,Topological Sort (DFS),https://leetcode.com/problems/topological-sort-dfs/,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,68,30,12,5
+Step 15,Graphs,Kahn's Algorithm (Topological Sort BFS),https://leetcode.com/problems/kahns-algorithm-topological-sort-bfs/,Topo Sort,"Tree, Binary Tree, Breadth-First Search",Medium,70,30,12,5
+Step 15,Graphs,Cycle Detection in Directed Graph (Kahn's Algo),https://leetcode.com/problems/cycle-detection-in-directed-graph-kahns-algo/,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,49,35,15,6
+Step 15,Graphs,Course Schedule I & II,https://leetcode.com/problems/course-schedule-i-ii/,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,48,40,18,7
+Step 15,Graphs,Find Eventual Safe States,https://leetcode.com/problems/find-eventual-safe-states/,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
+Step 15,Graphs,Alien Dictionary,https://leetcode.com/problems/alien-dictionary/,Topo Sort,"Graph, Breadth-First Search, Depth-First Search",Hard,36,75,35,14
+Step 15,Graphs,Shortest Path in Directed Acyclic Graph (DAG),https://leetcode.com/problems/shortest-path-in-directed-acyclic-graph-dag/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,71,35,15,6
+Step 15,Graphs,Shortest Path in Undirected Graph with Unit Weights,https://leetcode.com/problems/shortest-path-in-undirected-graph-with-unit-weights/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,65,30,12,5
+Step 15,Graphs,Dijkstra's Algorithm (Priority Queue / Set),https://leetcode.com/problems/dijkstras-algorithm-priority-queue-set/,Shortest Path,"Graph, Heap (Priority Queue), Shortest Path, Graph Theory",Medium,53,45,20,8
+Step 15,Graphs,Shortest Path in Binary Maze,https://leetcode.com/problems/shortest-path-in-binary-maze/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,48,35,15,6
+Step 15,Graphs,Path With Minimum Effort,https://leetcode.com/problems/path-with-minimum-effort/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,57,45,20,8
+Step 15,Graphs,Cheapest Flights Within K Stops,https://leetcode.com/problems/cheapest-flights-within-k-stops/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,38,50,22,9
+Step 15,Graphs,Network Delay Time,https://leetcode.com/problems/network-delay-time/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,53,40,18,7
+Step 15,Graphs,Number of Ways to Arrive at Destination,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,50,45,20,8
+Step 15,Graphs,Bellman Ford Algorithm,https://leetcode.com/problems/bellman-ford-algorithm/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,52,40,18,7
+Step 15,Graphs,Floyd Warshall Algorithm,https://leetcode.com/problems/floyd-warshall-algorithm/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,62,40,18,7
+Step 15,Graphs,Find City With Smallest Number of Neighbors,https://leetcode.com/problems/find-city-with-smallest-number-of-neighbors/,Shortest Path,"Graph, Breadth-First Search, Depth-First Search",Medium,61,40,18,7
+Step 15,Graphs,Prim's Algorithm - Minimum Spanning Tree,https://leetcode.com/problems/prims-algorithm---minimum-spanning-tree/,MST,"Graph, Breadth-First Search, Depth-First Search",Medium,60,40,18,7
+Step 15,Graphs,Disjoint Set Data Structure (Union by Rank & Size),https://leetcode.com/problems/disjoint-set-data-structure-union-by-rank-size/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,72,35,15,6
+Step 15,Graphs,Kruskal's Algorithm - MST,https://leetcode.com/problems/kruskals-algorithm---mst/,MST,"Graph, Breadth-First Search, Depth-First Search",Medium,62,40,18,7
+Step 15,Graphs,Number of Operations to Make Network Connected,https://leetcode.com/problems/number-of-operations-to-make-network-connected/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,61,35,15,6
+Step 15,Graphs,Most Stones Removed with Same Row or Column,https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,58,45,20,8
+Step 15,Graphs,Accounts Merge,https://leetcode.com/problems/accounts-merge/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Medium,56,50,22,9
+Step 15,Graphs,Number of Islands II (Online Queries),https://leetcode.com/problems/number-of-islands-ii-online-queries/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Hard,50,65,28,11
+Step 15,Graphs,Making a Large Island,https://leetcode.com/problems/making-a-large-island/,Disjoint Set,"Graph, Breadth-First Search, Depth-First Search",Hard,45,65,28,11
+Step 15,Graphs,Swim in Rising Water,https://leetcode.com/problems/swim-in-rising-water/,Graph Hard,"Graph, Breadth-First Search, Depth-First Search",Hard,60,60,25,10
+Step 15,Graphs,Strongly Connected Components - Kosaraju's Algo,https://leetcode.com/problems/strongly-connected-components---kosarajus-algo/,SCC,"Graph, Breadth-First Search, Depth-First Search",Hard,65,55,24,9
+Step 15,Graphs,Bridges in Graph - Tarjan's Algorithm,https://leetcode.com/problems/bridges-in-graph---tarjans-algorithm/,Bridges/AP,"Graph, Breadth-First Search, Depth-First Search",Hard,54,65,28,11
+Step 15,Graphs,Articulation Points in Graph,https://leetcode.com/problems/articulation-points-in-graph/,Bridges/AP,"Graph, Breadth-First Search, Depth-First Search",Hard,50,65,28,11
+Step 16,Dynamic Programming,Introduction to DP & Memoization vs Tabulation,https://leetcode.com/problems/introduction-to-dp-memoization-vs-tabulation/,DP Basics,Dynamic Programming,Easy,80,15,5,2
+Step 16,Dynamic Programming,Climbing Stairs,https://leetcode.com/problems/climbing-stairs/,1D DP,"Math, Dynamic Programming, Memoization",Easy,52,20,6,3
+Step 16,Dynamic Programming,Frog Jump (DP 3),https://leetcode.com/problems/frog-jump-dp-3/,1D DP,Dynamic Programming,Easy,65,20,8,3
+Step 16,Dynamic Programming,Frog Jump with K Distances (DP 4),https://leetcode.com/problems/frog-jump-with-k-distances-dp-4/,1D DP,Dynamic Programming,Medium,60,25,10,4
+Step 16,Dynamic Programming,Maximum Sum of Non-Adjacent Elements (House Robber),https://leetcode.com/problems/maximum-sum-of-non-adjacent-elements-house-robber/,1D DP,"Array, Dynamic Programming",Medium,50,30,12,5
+Step 16,Dynamic Programming,House Robber II,https://leetcode.com/problems/house-robber-ii/,1D DP,"Array, Dynamic Programming",Medium,41,30,12,5
+Step 16,Dynamic Programming,Ninja's Training (2D DP),https://leetcode.com/problems/ninjas-training-2d-dp/,2D Grid DP,Dynamic Programming,Medium,55,35,15,6
+Step 16,Dynamic Programming,Grid Unique Paths,https://leetcode.com/problems/grid-unique-paths/,2D Grid DP,Dynamic Programming,Medium,62,30,12,5
+Step 16,Dynamic Programming,Grid Unique Paths II (Obstacles),https://leetcode.com/problems/grid-unique-paths-ii-obstacles/,2D Grid DP,Dynamic Programming,Medium,40,35,15,6
+Step 16,Dynamic Programming,Minimum Path Sum in Grid,https://leetcode.com/problems/minimum-path-sum-in-grid/,2D Grid DP,Dynamic Programming,Medium,62,35,15,6
+Step 16,Dynamic Programming,Triangle Path Sum,https://leetcode.com/problems/triangle-path-sum/,2D Grid DP,Dynamic Programming,Medium,55,35,15,6
+Step 16,Dynamic Programming,Minimum / Maximum Falling Path Sum,https://leetcode.com/problems/minimum-maximum-falling-path-sum/,2D Grid DP,Dynamic Programming,Medium,68,35,15,6
+Step 16,Dynamic Programming,3D DP: Ninja and His Friends (Chocolates Pickup),https://leetcode.com/problems/3d-dp-ninja-and-his-friends-chocolates-pickup/,3D DP,Dynamic Programming,Hard,48,60,25,10
+Step 16,Dynamic Programming,Subset Sum Equal to Target,https://leetcode.com/problems/subset-sum-equal-to-target/,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,42,40,18,7
+Step 16,Dynamic Programming,Partition Equal Subset Sum,https://leetcode.com/problems/partition-equal-subset-sum/,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,46,40,18,7
+Step 16,Dynamic Programming,Partition Array into Two Subsets with Min Sum Diff,https://leetcode.com/problems/partition-array-into-two-subsets-with-min-sum-diff/,Subsequence DP,"Array, Backtracking, Bit Manipulation",Hard,32,65,28,11
+Step 16,Dynamic Programming,Count Subsets with Sum K,https://leetcode.com/problems/count-subsets-with-sum-k/,Subsequence DP,"Array, Backtracking, Bit Manipulation",Medium,38,40,18,7
+Step 16,Dynamic Programming,Count Partitions with Given Difference,https://leetcode.com/problems/count-partitions-with-given-difference/,Subsequence DP,Dynamic Programming,Medium,45,40,18,7
+Step 16,Dynamic Programming,0/1 Knapsack Problem,https://leetcode.com/problems/01-knapsack-problem/,Subsequence DP,Dynamic Programming,Medium,55,50,22,8
+Step 16,Dynamic Programming,Minimum Coins / Coin Change I,https://leetcode.com/problems/minimum-coins-coin-change-i/,Subsequence DP,"Array, Dynamic Programming, Breadth-First Search",Medium,42,40,18,7
+Step 16,Dynamic Programming,Target Sum,https://leetcode.com/problems/target-sum/,Subsequence DP,Dynamic Programming,Medium,46,40,18,7
+Step 16,Dynamic Programming,Coin Change II (Ways to make change),https://leetcode.com/problems/coin-change-ii-ways-to-make-change/,Subsequence DP,"Array, Dynamic Programming, Breadth-First Search",Medium,62,35,15,6
+Step 16,Dynamic Programming,Unbounded Knapsack,https://leetcode.com/problems/unbounded-knapsack/,Subsequence DP,Dynamic Programming,Medium,65,35,15,6
+Step 16,Dynamic Programming,Rod Cutting Problem,https://leetcode.com/problems/rod-cutting-problem/,Subsequence DP,Dynamic Programming,Medium,68,35,15,6
+Step 16,Dynamic Programming,Longest Common Subsequence (LCS),https://leetcode.com/problems/longest-common-subsequence-lcs/,String DP,Dynamic Programming,Medium,58,45,20,8
+Step 16,Dynamic Programming,Print Longest Common Subsequence,https://leetcode.com/problems/print-longest-common-subsequence/,String DP,Dynamic Programming,Medium,55,45,20,8
+Step 16,Dynamic Programming,Longest Common Substring,https://leetcode.com/problems/longest-common-substring/,String DP,Dynamic Programming,Medium,52,35,15,6
+Step 16,Dynamic Programming,Longest Palindromic Subsequence,https://leetcode.com/problems/longest-palindromic-subsequence/,String DP,"String, Dynamic Programming",Medium,62,35,15,6
+Step 16,Dynamic Programming,Minimum Insertions to Make String Palindrome,https://leetcode.com/problems/minimum-insertions-to-make-string-palindrome/,String DP,Dynamic Programming,Medium,68,35,15,6
+Step 16,Dynamic Programming,Minimum Insertions / Deletions to Convert String A to B,https://leetcode.com/problems/minimum-insertions-deletions-to-convert-string-a-to-b/,String DP,Dynamic Programming,Medium,60,35,15,6
+Step 16,Dynamic Programming,Shortest Common Supersequence,https://leetcode.com/problems/shortest-common-supersequence/,String DP,Dynamic Programming,Hard,58,60,25,10
+Step 16,Dynamic Programming,Distinct Subsequences,https://leetcode.com/problems/distinct-subsequences/,String DP,Dynamic Programming,Hard,45,60,25,10
+Step 16,Dynamic Programming,Edit Distance,https://leetcode.com/problems/edit-distance/,String DP,"String, Dynamic Programming",Hard,55,60,25,10
+Step 16,Dynamic Programming,Wildcard Matching,https://leetcode.com/problems/wildcard-matching/,String DP,"String, Dynamic Programming, Greediness, Recursion",Hard,27,70,30,12
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock I,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-i/,Stocks DP,Dynamic Programming,Easy,54,20,8,3
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock II,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/,Stocks DP,Dynamic Programming,Medium,65,25,10,4
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock III (Max 2 transactions),https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii-max-2-transactions/,Stocks DP,Dynamic Programming,Hard,42,60,25,10
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock IV (K transactions),https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv-k-transactions/,Stocks DP,Dynamic Programming,Hard,41,65,28,11
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock with Cooldown,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/,Stocks DP,Dynamic Programming,Medium,56,45,20,8
+Step 16,Dynamic Programming,Best Time to Buy and Sell Stock with Transaction Fee,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/,Stocks DP,Dynamic Programming,Medium,66,35,15,6
+Step 16,Dynamic Programming,Longest Increasing Subsequence (LIS),https://leetcode.com/problems/longest-increasing-subsequence-lis/,LIS DP,"Array, Binary Search, Dynamic Programming",Medium,54,50,22,9
+Step 16,Dynamic Programming,Print Longest Increasing Subsequence,https://leetcode.com/problems/print-longest-increasing-subsequence/,LIS DP,"Array, Binary Search, Dynamic Programming",Medium,50,45,20,8
+Step 16,Dynamic Programming,Longest Increasing Subsequence using Binary Search,https://leetcode.com/problems/longest-increasing-subsequence-using-binary-search/,LIS DP,"Array, Binary Search, Dynamic Programming",Hard,60,40,18,7
+Step 16,Dynamic Programming,Largest Divisible Subset,https://leetcode.com/problems/largest-divisible-subset/,LIS DP,"Array, Backtracking, Bit Manipulation",Medium,41,45,20,8
+Step 16,Dynamic Programming,Longest String Chain,https://leetcode.com/problems/longest-string-chain/,LIS DP,Dynamic Programming,Medium,60,45,20,8
+Step 16,Dynamic Programming,Longest Bitonic Subsequence,https://leetcode.com/problems/longest-bitonic-subsequence/,LIS DP,Dynamic Programming,Medium,52,45,20,8
+Step 16,Dynamic Programming,Number of Longest Increasing Subsequences,https://leetcode.com/problems/number-of-longest-increasing-subsequences/,LIS DP,"Array, Binary Search, Dynamic Programming",Medium,43,50,22,9
+Step 16,Dynamic Programming,Matrix Chain Multiplication (MCM) Partition DP,https://leetcode.com/problems/matrix-chain-multiplication-mcm-partition-dp/,MCM DP,Dynamic Programming,Hard,52,60,25,10
+Step 16,Dynamic Programming,Mining Diamonds / Burst Balloons,https://leetcode.com/problems/mining-diamonds-burst-balloons/,MCM DP,Dynamic Programming,Hard,52,65,28,11
+Step 16,Dynamic Programming,Evaluate Boolean Expression to True,https://leetcode.com/problems/evaluate-boolean-expression-to-true/,MCM DP,Dynamic Programming,Hard,48,70,30,12
+Step 16,Dynamic Programming,Palindromic Partitioning II,https://leetcode.com/problems/palindromic-partitioning-ii/,MCM DP,Dynamic Programming,Hard,33,65,28,11
+Step 16,Dynamic Programming,Partition Array for Maximum Sum,https://leetcode.com/problems/partition-array-for-maximum-sum/,MCM DP,Dynamic Programming,Medium,72,40,18,7
+Step 16,Dynamic Programming,Maximum Rectangle Area with All 1s (DP),https://leetcode.com/problems/maximum-rectangle-area-with-all-1s-dp/,DP on Grids,Dynamic Programming,Hard,46,60,25,10
+Step 16,Dynamic Programming,Count Square Submatrices with All 1s,https://leetcode.com/problems/count-square-submatrices-with-all-1s/,DP on Grids,Dynamic Programming,Medium,74,35,15,6
+Step 17,Tries,"Implement Trie I (Prefix Tree - Insert, Search, StartsWith)",https://leetcode.com/problems/implement-trie-i-prefix-tree---insert-search-startswith/,Trie,"Design, Trie, Hash Table, String",Medium,64,40,18,7
+Step 17,Tries,"Implement Trie II (Count Words Equal To, Count Words Starting With)",https://leetcode.com/problems/implement-trie-ii-count-words-equal-to-count-words-starting-with/,Trie,"Design, Trie, Hash Table, String",Medium,58,45,20,8
+Step 17,Tries,Longest Word with All Prefixes,https://leetcode.com/problems/longest-word-with-all-prefixes/,Trie,"Trie, Design, String",Medium,52,40,18,7
+Step 17,Tries,Number of Distinct Substrings in a String,https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/,Trie,"Trie, Design, String",Medium,60,45,20,8
+Step 17,Tries,Bit Manipulation using Trie - Max XOR of Two Numbers,https://leetcode.com/problems/bit-manipulation-using-trie---max-xor-of-two-numbers/,Trie / Bit,"Trie, Design, String",Hard,56,60,25,10
+Step 17,Tries,Maximum XOR With an Element From Array (Queries),https://leetcode.com/problems/maximum-xor-with-an-element-from-array-queries/,Trie / Bit,"Trie, Design, String",Hard,48,70,30,12
+Step 18,Advanced Strings,Z-Algorithm for Pattern Searching,https://leetcode.com/problems/z-algorithm-for-pattern-searching/,String Algo,"String, String Matching",Hard,42,65,28,11
+Step 18,Advanced Strings,KMP Algorithm / Knuth-Morris-Pratt (Prefix Function),https://leetcode.com/problems/kmp-algorithm-knuth-morris-pratt-prefix-function/,String Algo,"String, String Matching",Hard,45,65,28,11
+Step 18,Advanced Strings,Rabin-Karp Algorithm for Pattern Matching,https://leetcode.com/problems/rabin-karp-algorithm-for-pattern-matching/,String Algo,"String, String Matching",Hard,38,75,35,12
+Step 18,Advanced Strings,Shortest Palindrome using KMP,https://leetcode.com/problems/shortest-palindrome-using-kmp/,String Algo,"String, String Matching",Hard,32,75,32,13
+Step 18,Advanced Strings,Repeated String Match,https://leetcode.com/problems/repeated-string-match/,String Algo,"String, Hash Table",Medium,35,40,18,7
